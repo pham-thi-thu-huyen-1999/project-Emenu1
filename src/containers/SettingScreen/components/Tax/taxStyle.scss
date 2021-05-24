@@ -1,0 +1,23 @@
+.promotion {
+  .pr-content {
+    .field-istax {
+      .title-istax{
+        flex-basis: 40%;
+        padding: 10px;
+      }
+    }
+    .tax-content{
+      .tax-item{
+        .tax-item-status{
+          .text-percent{
+            font-size: 30px;
+            margin-left: 5px;
+          }
+        }
+        .tax-input {
+            width: 50px;
+        }
+      }
+    }
+  }
+}

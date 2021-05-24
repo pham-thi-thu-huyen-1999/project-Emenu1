@@ -1,0 +1,110 @@
+.imagesle {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 10%;
+}
+
+.slickimage {
+  top: 73%;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  /* background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+  position: relative;
+  /* overflow-x:auto;; */
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.contentslick:hover {
+  opacity: 1;
+}
+
+.contentslick {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  opacity: 0.3;
+}
+
+.mgslick {
+  width: 19px;
+}
+
+.activeimage {
+  opacity: 1;
+}
+
+.addimage {
+  position: absolute;
+  top: 28%;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #404040;
+
+  border-radius: 8%;
+  opacity: 0.2;
+}
+
+.addimage:hover {
+  opacity: 0.9;
+  background-color: #f16421;
+}
+
+.classth {
+  min-width: 7em;
+}
+
+.overlay-fixed {
+  position: fixed !important;
+  overflow: scroll !important;
+}
+
+.foodManagement .name {
+  width: 48% !important;
+  padding: 10px !important;
+}
+
+.foodManagement .no {
+  width: 5% !important;
+  padding: 10px !important;
+}
+
+.foodManagement .price {
+  width: 12% !important;
+  padding: 10px !important;
+}
+
+.foodManagement .unit {
+  width: 12% !important;
+  padding: 10px !important;
+}
+
+.foodManagement .tax {
+  /* width: 12% !important; */
+  padding: 10px !important;
+}
+
+.foodManagement .status {
+  /* width: 12% !important; */
+  padding: 10px 10px 10px 25px !important;
+}
+
+.height-btn-table {
+  height: 49px !important;
+  line-height: 49px !important;
+}
+
+.height-btn-table-print-test {
+    max-width: 120px;
+}

@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+  emenu-client-dev:
+    image: thonh4/omenu:client-staging
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.emenu-client.rule=Host(`staging.ohazo.net`)"
+      - "traefik.http.routers.emenu-client.entrypoints=web"
+      - "traefik.http.routers.emenu-client.middlewares=emenu-client-redirectscheme@docker"
+      - "traefik.http.routers.emenu-client-secured.rule=Host(`staging.ohazo.net`)"
+      - "traefik.http.routers.emenu-client-secured.entrypoints=websecure"
+      - "traefik.http.routers.emenu-client-secured.tls=true"
+      - "traefik.http.routers.emenu-client-secured.tls.certresolver=mytlschallenge"
+      - "traefik.http.middlewares.emenu-client-redirectscheme.redirectscheme.scheme=https"
+    networks:
+      - web
+  
+networks:
+  web:
+    external: true

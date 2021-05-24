@@ -1,0 +1,83 @@
+{
+  "payment_order": {
+    "title": "Danh sách món",
+    "pay_by_item": "Thanh toán theo món",
+    "no": "STT",
+    "food_name": "Tên món",
+    "order_time": "Thời gian gọi",
+    "quantity": "Số lượng",
+    "status": "Trạng thái",
+    "is_bring_home": "Mang về",
+    "price": "Giá",
+    "payment_selection": {
+      "title": "Phương thức thanh toán"
+    },
+    "money_calculation": {
+      "title": "Số tiền mỗi người",
+      "quantity": "Số người",
+      "each_person_money": "Mỗi người"
+    },
+    "money_info": {
+      "total": "Tổng cộng",
+      "additional_fee": "Phụ thu",
+      "tax": "Thuế",
+      "promotion": "Khuyến mãi",
+      "voucher_placeholder": "Nhập mã giảm giá",
+      "final_price": "Tổng tiền",
+      "post_money_without_discount": "Thành tiền",
+      "voucher": "Voucher",
+      "post_total": "Tổng thanh toán",
+      "bill_promotion": "Hóa đơn",
+      "drink_promotion": "Thức uống",
+      "food_promotion": "Món ăn",
+      "error_voucher": "Mã voucher không tồn tại",
+      "voucher_code": "Mã voucher"
+    },
+    "payment_method": {
+      "title": "Phương thức thanh toán",
+      "note": "Ghi chú",
+      "pay_by_cash": "Thanh toán bằng tiền mặt",
+      "pay_by_atm": "Bằng ATM: Các thẻ ATM nội địa, Visa/Master, Debit.",
+      "pay_by_e_wallet": "Thanh toán bằng ví điện tử thì hiện thì QRCode cho khách hàng quét trên điện thoại có hỗ trợ tính năng này"
+    },
+    "cancel": "Quay lại",
+    "confirm": "Xác nhận",
+    "checkout": "Thanh toán",
+    "export_temp_bill": "In tạm tính",
+    "export_bill": "In hóa đơn",
+    "ok": "Ok",
+    "notiPaymentSuccess": "Thanh toán thành công",
+    "notiPaymentFail": "Lỗi thanh toán",
+    "payment_methods": {
+      "CASH": "TIỀN MẶT",
+      "ATM": "ATM",
+      "MOMO": "MOMO",
+      "ZALOPAY": "ZALOPAY",
+      "VNPAY": "VNPAY"
+    },
+    "payment_confirmation": {
+      "title": "Hóa đơn thanh toán",
+      "order_no": "Số hóa đơn",
+      "staff_name": "Thu ngân",
+      "confirm_checkout": "Thanh toán hóa đơn này",
+      "food_list": {
+        "name": "Tên",
+        "quantity": "SL",
+        "unit_price": "Đơn giá",
+        "total": "Thành tiền"
+      }
+    },
+    "modal_swal": {
+      "accept": "Bạn có đồng ý"
+    },
+    "money_calculator_modal": {
+      "title": "Thanh toán",
+      "default_money_title": "Nhập số tiền theo mệnh giá",
+      "submit_button": "Thanh toán",
+      "total": "Số tiền phải trả",
+      "input_money": "Số tiền khách đưa",
+      "remain_money": "Tiền trả lại cho khách",
+      "not_get_remain_money": "Khách không lấy tiền thừa"
+    }
+  }
+}

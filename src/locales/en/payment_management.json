@@ -1,0 +1,83 @@
+{
+  "payment_order": {
+    "title": "Food list",
+    "pay_by_item": "Pay by selecting items",
+    "no": "No",
+    "food_name": "Name",
+    "order_time": "Time passed",
+    "quantity": "Quantity",
+    "status": "Status",
+    "is_bring_home": "Bring home",
+    "price": "Price",
+    "payment_selection": {
+      "title": "Payment methods"
+    },
+    "money_calculation": {
+      "title": "Each person money",
+      "quantity": "People count",
+      "each_person_money": "Shared amount"
+    },
+    "money_info": {
+      "total": "Total",
+      "additional_fee": "Additional Fee",
+      "tax": "Taxes",
+      "promotion": "Promotions",
+      "voucher_placeholder": "Enter voucher",
+      "final_price": "Total money",
+      "post_money_without_discount": "Post-total money (not discount)",
+      "voucher": "Voucher",
+      "post_total": "Post-Total",
+      "bill_promotion": "Bill",
+      "drink_promotion": "Drinks",
+      "food_promotion": "Foods",
+      "error_voucher": "Voucher code does not exist",
+      "voucher_code": "Voucher code"
+    },
+    "payment_method": {
+      "title": "Payment methods",
+      "note": "Note",
+      "pay_by_cash": "Pay by cash",
+      "pay_by_atm": "Pay by ATM, Visa/Master, Debit.",
+      "pay_by_e_wallet": "Show bill QR code to customer for payment"
+    },
+    "cancel": "Back",
+    "confirm": "Confirm",
+    "checkout": "Pay",
+    "export_temp_bill": "Print pre-bill",
+    "export_bill": "Print post-bill",
+    "ok": "Ok",
+    "notiPaymentSuccess": "Payment success",
+    "notiPaymentFail": "Payment error",
+    "payment_methods": {
+      "CASH": "CASH",
+      "ATM": "ATM",
+      "MOMO": "MOMO",
+      "ZALOPAY": "ZALOPAY",
+      "VNPAY": "VNPAY"
+    },
+    "payment_confirmation": {
+      "title": "Bill Payment",
+      "order_no": "No",
+      "staff_name": "Staff name",
+      "confirm_checkout": "Pay this bill",
+      "food_list": {
+        "name": "Name",
+        "quantity": "Qty",
+        "unit_price": "Unit price",
+        "total": "Total"
+      }
+    },
+    "modal_swal": {
+      "accept": "Are you sure"
+    },
+    "money_calculator_modal": {
+      "title": "Bill Payment",
+      "default_money_title": "Default money amount",
+      "submit_button": "Pay",
+      "total": "Total",
+      "input_money": "Customer give",
+      "remain_money": "Remaining money",
+      "not_get_remain_money": "Customer does not get remain money"
+    }
+  }
+}

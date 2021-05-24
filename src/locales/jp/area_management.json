@@ -1,0 +1,63 @@
+{
+    "area_list_title": "エリアリスト",
+    "search": "探す",
+    "search_area_by_name_placeholder": "エリア名を入力してください",
+    "add_new_button": "追加",
+    "table_order": "数値順",
+    "table_area_name": "エリア名",
+    "table_area_description": "説明",
+    "table_area_ratio": "比率",
+    "table_empty_data": "まだ作成されたエリアはありません",
+    "action_order": "テーブルを配置する",
+    "action_edit": "編集する",
+    "action_delete": "削除する",
+
+    "area_new_title": "新しいエリア",
+    "new_area_name": "エリア名",
+    "new_area_name_placeholder": "エリア名を入力してください",
+    "new_area_description": "説明",
+    "new_area_description_placeholder": "エリアの説明を入力してください",
+    "new_area_smoking": {
+        "title": "喫煙",
+        "yes": "はい",
+        "no": "番号"
+    },
+    "new_area_ratio": "比率",
+
+    "validate": {
+        "name_required": "エリア名は必須です",
+        "description_required": "エリアの説明は必須です"
+    },
+
+    "area_message_title": "お知らせ",
+
+    "area_create_title": "新しいエリアを作成する",
+    "area_create_message": "新しいエリアを作成しますか？",
+    "area_create_success": "エリアが正常に作成されました",
+    "area_create_fail": "作成されたエリアは失敗します",
+    "new_area_submit_button": "作成する",
+    "new_area_cancel_button": "キャンセル",
+
+    "area_edit_title": "エリアを編集",
+    "area_edit_message": "Bạn có muốn cập nhật thông tin khu vực?",
+    "area_update_success": "エリアが正常に更新されました",
+    "area_update_fail": "更新された領域が失敗しました",
+    "edit_area_submit_button": "更新",
+    "edit_area_cancel_button": "キャンセル",
+
+    "area_delete_title": "エリア確認削除",
+    "area_delete_message": "このエリアを削除しますか?",
+    "area_delete_sucess": "このエリアを削除しますか?",
+    "area_delete_error": "このエリアを削除しますか?",
+    "confirm_button": {
+        "cancel": "キャンセル",
+        "delete": "削除する"
+    },
+
+    "area_statistics": {
+        "available_table": "利用可能なテーブル",
+        "in_use_table": "使用中のテーブル",
+        "vip_table": "VIPテーブル",
+        "normal_table": "通常のテーブル"
+    }
+}

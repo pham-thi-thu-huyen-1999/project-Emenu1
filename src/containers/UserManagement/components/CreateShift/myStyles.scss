@@ -1,0 +1,290 @@
+.create-shift-main {
+  .tab-list {
+    padding-left: 0;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .select-day {
+    margin: 5px 0;
+  }
+
+  .tbl-calendar-work {
+    height: calc(100% - 66px);
+  }
+
+  .tab-list-shift {
+    height: calc(100% - 57px);
+
+    .main-shift {
+      .tbl-main-shift {
+        margin: 10px 0;
+
+        .row-tbl {
+          padding: 10px;
+
+          .day-name {
+            flex-basis: 10%;
+          }
+
+          .check-all {
+            flex-basis: 10%;
+            padding: 5px;
+          }
+
+          .list-shift {
+            flex: 1
+          }
+
+          &:nth-child(odd) {
+            background: #f5f5f5;
+          }
+        }
+      }
+    }
+
+    .overtime-shift {
+      height: 300px;
+      min-height: 300px;
+
+      .input-date {
+        flex-basis: 50%;
+        margin-right: 10px;
+      }
+
+      .status-accept {
+        font-weight: bold;
+        color: #2699fb;
+      }
+
+      .status-waitting {
+        font-weight: bold;
+        color: #f27922
+      }
+
+      .status-cancel {
+        font-weight: bold;
+        color: red;
+      }
+    }
+
+    .off-day {
+      height: 300px;
+      min-height: 300px;
+
+      .input-date {
+        width: 50%;
+        margin-right: 10px;
+      }
+      
+      .status-accept {
+        font-weight: bold;
+        color: #2699fb;
+      }
+
+      .status-waitting {
+        font-weight: bold;
+        color: #f27922
+      }
+
+      .status-cancel {
+        font-weight: bold;
+        color: red;
+      }
+    }
+
+    .checkin-checkout {
+      height: 300px;
+      min-height: 300px;
+
+      .search-add {
+        .search {
+          flex-basis: 50%;
+        }
+
+        .btn-search {
+          margin-left: 10px;
+        }
+
+      }
+    }
+
+  }
+}
+
+.input-date {
+  position: relative;
+
+  .icon-date {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    color: #ef883c;
+  }
+}
+
+.date-selected {
+  padding: 0 5px;
+  height: 50px;
+  border-radius: 0;
+  font-family: inherit;
+  outline: none;
+  border: 1px solid #d8d2de;
+  background: #f8f8f8;
+  color: #555;
+  box-shadow: rgba(37, 11, 54, 0.04) 0px 2px 0px;
+  border-radius: 10px;
+  width: 100% !important;
+  text-indent: 10px;
+}
+
+.popup-add-check {
+  max-width: 900px !important;
+
+  .comp-select-day {
+    font-size: 16px;
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .choose-day {
+      padding: 0 10px;
+      flex-basis: 30%;
+      align-items: center;
+
+      .text-choose {
+        margin-right: 10px;
+      }
+    }
+
+    .lst-shift {
+      .item-shift {
+        flex-basis: 25%;
+        padding: 10px;
+
+        .disable-default {
+          .nice-chkbox {
+            cursor: default;
+
+            .pl:before {
+              content: "";
+              background: #898989;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .comp-add-check {
+    font-size: 16px;
+
+    .title-edit {
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .check-day {
+      margin-bottom: 10px;
+
+      .text-name {
+        width: 20%;
+      }
+    }
+
+    .reason {
+      margin-bottom: 10px;
+      padding: 0;
+
+      .input-reason {
+        width: 100%;
+      }
+    }
+
+    .check {
+      .label-check {
+        width: 40%;
+      }
+
+      .check-out {
+        flex-basis: 50%;
+
+        .input-date {
+          width: 60%;
+        }
+      }
+
+      .check-in {
+        .input-date {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .reason {
+    margin-bottom: 10px;
+    padding: 0 10px;
+
+    .input-reason {
+      width: 100%;
+    }
+  }
+}
+
+.popup-history {
+  height: 500px;
+
+  .tbls-history {
+    height: calc(100% - 57px);
+    min-height: 200px;
+  }
+}
+
+.no-data {
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.select-shift {
+  margin-bottom: 10px;
+
+  .item-shift {
+    flex-basis: 20%;
+    padding: 10px;
+
+    .item-chkbox {
+      .nice-check {
+        .pl {
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          border: 1px solid #e1e1e1;
+          background: #f8f8f8;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          margin-right: 5px;
+          border-radius: 5px;
+
+          &.selected {
+            background: #f17a39;
+          }
+
+          &.disable-default {
+            cursor: default;
+            background: #898989;
+          }
+        }
+      }
+
+      .input-checkbox {
+        display: none;
+      }
+    }
+  }
+}

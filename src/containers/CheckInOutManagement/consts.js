@@ -1,0 +1,321 @@
+export const CODE_CHECK_IN = 1;
+export const CODE_CHECK_OUT = 2;
+export const CODE_ADD_OT = 3;
+export const CODE_WORK_INSTEAD = 4;
+export const CODE_SHOW_CALENDAR = 5;
+export const CODE_TAKE_LEAVE = 6;
+
+export const funtionCheckInList = [
+  {
+    id: CODE_CHECK_IN,
+    text: "check-in",
+    image_link: require("../../images/CheckInOut/check_in.png"),
+    image_link_selected: require("../../images/CheckInOut/check_in_selected.png"),
+  },
+  {
+    id: CODE_ADD_OT,
+    text: "đăng ký làm thêm",
+    image_link: require("../../images/CheckInOut/register_ot_shift.png"),
+    image_link_selected: require("../../images/CheckInOut/register_ot_shift_selected.png"),
+  },
+  {
+    id: CODE_WORK_INSTEAD,
+    text: "đăng ký làm việc thay",
+    image_link: require("../../images/CheckInOut/instead_work.png"),
+    image_link_selected: require("../../images/CheckInOut/instead_work_selected.png"),
+  },
+  {
+    id: CODE_SHOW_CALENDAR,
+    text: "xem lịch làm việc",
+    image_link: require("../../images/CheckInOut/calendar.png"),
+    image_link_selected: require("../../images/CheckInOut/calendar_selected.png"),
+  },
+  {
+    id: CODE_TAKE_LEAVE,
+    text: "xin nghỉ phép",
+    image_link: require("../../images/CheckInOut/take_leave.png"),
+    image_link_selected: require("../../images/CheckInOut/take_leave_selected.png"),
+  },
+];
+
+export const funtionCheckOutList = [
+  {
+    id: CODE_CHECK_OUT,
+    text: "check-out",
+    image_link: require("../../images/CheckInOut/check_out.png"),
+    image_link_selected: require("../../images/CheckInOut/check_out_selected.png"),
+  },
+];
+
+export const funtionCalendarList = [
+  {
+    id: CODE_ADD_OT,
+    text: "đăng ký làm thêm",
+    image_link: require("../../images/CheckInOut/register_ot_shift.png"),
+    image_link_selected: require("../../images/CheckInOut/register_ot_shift_selected.png"),
+  },
+  {
+    id: CODE_WORK_INSTEAD,
+    text: "đăng ký làm việc thay",
+    image_link: require("../../images/CheckInOut/instead_work.png"),
+    image_link_selected: require("../../images/CheckInOut/instead_work_selected.png"),
+  },
+  {
+    id: CODE_SHOW_CALENDAR,
+    text: "xem lịch làm việc",
+    image_link: require("../../images/CheckInOut/calendar.png"),
+    image_link_selected: require("../../images/CheckInOut/calendar_selected.png"),
+  },
+  {
+    id: CODE_TAKE_LEAVE,
+    text: "xin nghỉ phép",
+    image_link: require("../../images/CheckInOut/take_leave.png"),
+    image_link_selected: require("../../images/CheckInOut/take_leave_selected.png"),
+  },
+];
+export const CHECK_IN = "CHECK_IN";
+export const CHECK_OUT = "CHECK_OUT";
+export const LESS_THAN = "LESS_THAN";
+export const GREATER_THAN = "GREATER_THAN";
+
+export const LIMIT = 14;
+
+export const WEEK = 7;
+export const MONTH = 12;
+//status for over time shift
+export const ACCEPT = 1;
+export const WAITING = 2;
+export const CANCEL = 3;
+
+//status for shift
+export const WORK = 1;
+export const OVER_TIME = 2;
+export const TAKE_LEAVE = 3;
+export const INSTEAD_WORK = 4;
+
+export const OVER_TIME_CANCEL_WORK_SHIFT = "OVERTIME";
+export const NO_OVER_TIME_CANCEL_WORK_SHIFT = "NO_OVERTIME";
+
+//Status of check in
+export const CHECKED_IN = 1;
+export const CHECK_IN_WAITING = 2;
+export const NOT_YET_CHECK_IN = 3;
+
+export const EXAMPLE_CALENDAR_DAY = {
+  date_at: "2020-08-19T00:00:00.000Z",
+  shifts: [
+    {
+      id: "eaaa2357-59c8-411f-92d0-ad011abba635",
+      name: "ca 3",
+      start_time: "22:00",
+      end_time: "06:00",
+      status_calendar: 1,
+      status_overtimve_shift: 0,
+      status_take_leave: 0,
+    },
+  ],
+};
+
+export const DAYS_EN = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+export const DAYS_JP = [
+  "日曜日",
+  "月曜",
+  "火曜日",
+  "水曜日",
+  "木曜日",
+  "金曜日",
+  "土曜日",
+];
+export const DAYS_VN = [
+  "Chủ Nhật",
+  "Thứ 2",
+  "Thứ 3",
+  "Thứ 4",
+  "Thứ 5",
+  "Thứ 6",
+  "Thứ 7",
+];
+
+export const MONTH_GRID = [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  35,
+  37,
+  38,
+  39,
+  40,
+  41,
+];
+
+export const GETCALENDAROFUSER = "CHECKINOUTMANAGEMENT/GETCALENDAROFUSER";
+export const GETCALENDAROFUSER_SUCCESS =
+  "CHECKINOUTMANAGEMENT/GETCALENDAROFUSER_SUCCESS";
+export const GETCALENDAROFUSER_FAIL =
+  "CHECKINOUTMANAGEMENT/GETCALENDAROFUSER_FAIL";
+
+export const ADDCHECKIN_OUT = "CHECKINOUTMANAGEMENT/ADDCHECKIN_OUT";
+export const ADDCHECKIN_OUT_SUCCESS =
+  "CHECKINOUTMANAGEMENT/ADDCHECKIN_OUT_SUCCESS";
+export const ADDCHECKIN_OUT_FAIL = "CHECKINOUTMANAGEMENT/ADDCHECKIN_OUT_FAIL";
+
+export const GETLISTSHIFT = "CHECKINOUTMANAGEMENT/GETLISTSHIFT";
+export const GETLISTSHIFT_SUCCESS = "CHECKINOUTMANAGEMENT/GETLISTSHIFT_SUCCESS";
+export const GETLISTSHIFT_FAIL = "CHECKINOUTMANAGEMENT/GETLISTSHIFT_FAIL";
+
+export const GETOTSHIFT = "CHECKINOUTMANAGEMENT/GETOTSHIFT";
+export const GETOTSHIFT_SUCCESS = "CHECKINOUTMANAGEMENT/GETOTSHIFT_SUCCESS";
+export const GETOTSHIFT_FAIL = "CHECKINOUTMANAGEMENT/GETOTSHIFT_FAIL";
+
+export const DELETEOTSHIFT = "CHECKINOUTMANAGEMENT/DELETEOTSHIFT";
+export const DELETEOTSHIFT_SUCCESS =
+  "CHECKINOUTMANAGEMENT/DELETEOTSHIFT_SUCCESS";
+export const DELETEOTSHIFT_FAIL = "CHECKINOUTMANAGEMENT/DELETEOTSHIFT_FAIL";
+
+export const ADDOTSHIFT = "CHECKINOUTMANAGEMENT/ADDOTSHIFT";
+export const ADDOTSHIFT_SUCCESS = "CHECKINOUTMANAGEMENT/ADDOTSHIFT_SUCCESS";
+export const ADDOTSHIFT_FAIL = "CHECKINOUTMANAGEMENT/ADDOTSHIFT_FAIL";
+
+export const GETACCOUNTLIST = "CHECKINOUTMANAGEMENT/GETACCOUNTLIST";
+export const GETACCOUNTLIST_SUCCESS =
+  "CHECKINOUTMANAGEMENT/GETACCOUNTLIST_SUCCESS";
+export const GETACCOUNTLIST_FAIL = "CHECKINOUTMANAGEMENT/GETACCOUNTLIST_FAIL";
+
+export const GETUSERINFO = "CHECKINOUTMANAGEMENT/GETUSERINFO";
+export const GETUSERINFO_SUCCESS = "CHECKINOUTMANAGEMENT/GETUSERINFO_SUCCESS";
+export const GETUSERINFO_FAIL = "CHECKINOUTMANAGEMENT/GETUSERINFO_FAIL";
+
+export const ADDTAKELEAVE = "CHECKINOUTMANAGEMENT/ADDTAKELEAVE";
+export const ADDTAKELEAVE_SUCCESS = "CHECKINOUTMANAGEMENT/ADDTAKELEAVE_SUCCESS";
+export const ADDTAKELEAVE_FAIL = "CHECKINOUTMANAGEMENT/ADDTAKELEAVE_FAIL";
+
+export const GETTAKELEAVESHIFT = "CHECKINOUTMANAGEMENT/GETTAKELEAVESHIFT";
+export const GETTAKELEAVESHIFT_SUCCESS =
+  "CHECKINOUTMANAGEMENT/GETTAKELEAVESHIFT_SUCCESS";
+export const GETTAKELEAVESHIFT_FAIL =
+  "CHECKINOUTMANAGEMENT/GETTAKELEAVESHIFT_FAIL";
+
+export const DELETETAKELEAVESHIFT = "CHECKINOUTMANAGEMENT/DELETETAKELEAVESHIFT";
+export const DELETETAKELEAVESHIFT_SUCCESS =
+  "CHECKINOUTMANAGEMENT/DELETETAKELEAVESHIFT_SUCCESS";
+export const DELETETAKELEAVESHIFT_FAIL =
+  "CHECKINOUTMANAGEMENT/DELETETAKELEAVESHIFT_FAIL";
+
+export const SETPAGETAKELEAVE = "CHECKINOUTMANAGEMENT/SETPAGETAKELEAVE";
+export const SETPAGEOVERTIME = "CHECKINOUTMANAGEMENT/SETPAGEOVERTIME";
+export const SETPAGEREPLACE = "CHECKINOUTMANAGEMENT/SETPAGEREPLACE";
+export const RESETCALENDAROFUSER = "CHECKINOUTMANAGEMENT/RESETCALENDAROFUSER";
+
+export const ADDREPLACESHIFT = "CHECKINOUTMANAGEMENT/ADDREPLACESHIFT";
+export const ADDREPLACESHIFT_SUCCESS =
+  "CHECKINOUTMANAGEMENT/ADDREPLACESHIFT_SUCCESS";
+export const ADDREPLACESHIFT_FAIL = "CHECKINOUTMANAGEMENT/ADDREPLACESHIFT_FAIL";
+
+export const DELETEREPLACESHIFT = "CHECKINOUTMANAGEMENT/DELETEREPLACESHIFT";
+export const DELETEREPLACESHIFT_SUCCESS =
+  "CHECKINOUTMANAGEMENT/DELETEREPLACESHIFT_SUCCESS";
+export const DELETEREPLACESHIFT_FAIL =
+  "CHECKINOUTMANAGEMENT/DELETEREPLACESHIFT_FAIL";
+
+export const GETREPLACESHIFT = "CHECKINOUTMANAGEMENT/GETREPLACESHIFT";
+export const GETREPLACESHIFT_SUCCESS =
+  "CHECKINOUTMANAGEMENT/GETREPLACESHIFT_SUCCESS";
+export const GETREPLACESHIFT_FAIL = "CHECKINOUTMANAGEMENT/GETREPLACESHIFT_FAIL";
+
+export const GETCALENDAROFUSERBYWEEK =
+  "CHECKINOUTMANAGEMENT/GETCALENDAROFUSERBYWEEK";
+export const GETCALENDAROFUSERBYWEEK_SUCCESS =
+  "CHECKINOUTMANAGEMENT/GETCALENDAROFUSERBYWEEK_SUCCESS";
+export const GETCALENDAROFUSERBYWEEK_FAIL =
+  "CHECKINOUTMANAGEMENT/GETCALENDAROFUSERBYWEEK_FAIL";
+
+export const GETEMPLOYEEOFSHIFT = "CHECKINOUTMANAGEMENT/GETEMPLOYEEOFSHIFT";
+export const GETEMPLOYEEOFSHIFT_SUCCESS =
+  "CHECKINOUTMANAGEMENT/GETEMPLOYEEOFSHIFT_SUCCESS";
+export const GETEMPLOYEEOFSHIFT_FAIL =
+  "CHECKINOUTMANAGEMENT/GETEMPLOYEEOFSHIFT_FAIL";
+
+export const ADDTAKELEAVEFORCALENDAR =
+  "CHECKINOUTMANAGEMENT/ADDTAKELEAVEFORCALENDAR";
+export const ADDTAKELEAVEFORCALENDAR_SUCCESS =
+  "CHECKINOUTMANAGEMENT/ADDTAKELEAVEFORCALENDAR_SUCCESS";
+export const ADDTAKELEAVEFORCALENDAR_FAIL =
+  "CHECKINOUTMANAGEMENT/ADDTAKELEAVEFORCALENDAR_FAIL";
+
+export const GETCALENDAROFUSERBYMONTH =
+  "CHECKINOUTMANAGEMENT/GETCALENDAROFUSERBYMONTH";
+export const GETCALENDAROFUSERBYMONTH_SUCCESS =
+  "CHECKINOUTMANAGEMENT/GETCALENDAROFUSERBYMONTH_SUCCESS";
+export const GETCALENDAROFUSERBYMONTH_FAIL =
+  "CHECKINOUTMANAGEMENT/GETCALENDAROFUSERBYMONTH_FAIL";
+
+export const GETLISTCHECKIN = "CHECKINOUTMANAGEMENT/GETLISTCHECKIN";
+export const GETLISTCHECKIN_SUCCESS =
+  "CHECKINOUTMANAGEMENT/GETLISTCHECKIN_SUCCESS";
+export const GETLISTCHECKIN_FAIL = "CHECKINOUTMANAGEMENT/GETLISTCHECKIN_FAIL";
+
+export const DELETETAKElEAVEFORCALENDAR =
+  "CHECKINOUTMANAGEMENT/DELETETAKElEAVEFORCALENDAR";
+export const DELETETAKElEAVEFORCALENDAR_SUCCESS =
+  "CHECKINOUTMANAGEMENT/DELETETAKElEAVEFORCALENDAR_SUCCESS";
+export const DELETETAKElEAVEFORCALENDAR_FAIL =
+  "CHECKINOUTMANAGEMENT/DELETETAKElEAVEFORCALENDAR_FAIL";
+
+export const DELETEOVERTIMEFORCALENDAR =
+  "CHECKINOUTMANAGEMENT/DELETEOVERTIMEFORCALENDAR";
+export const DELETEOVERTIMEFORCALENDAR_SUCCESS =
+  "CHECKINOUTMANAGEMENT/DELETEOVERTIMEFORCALENDAR_SUCCESS";
+export const DELETEOVERTIMEFORCALENDAR_FAIL =
+  "CHECKINOUTMANAGEMENT/DELETEOVERTIMEFORCALENDAR_FAIL";
+
+export const DELETEREPLACESHIFTFORCALENDAR =
+  "CHECKINOUTMANAGEMENT/DELETEREPLACESHIFTFORCALENDAR";
+export const DELETEREPLACESHIFTFORCALENDAR_SUCCESS =
+  "CHECKINOUTMANAGEMENT/DELETEREPLACESHIFTFORCALENDAR_SUCCESS";
+export const DELETEREPLACESHIFTFORCALENDAR_FAIL =
+  "CHECKINOUTMANAGEMENT/DELETEREPLACESHIFTFORCALENDAR_FAIL";
+
+export const SETATCHECKINPAGE = "CHECKINOUTMANAGEMENT/SETATCHECKINPAGE";
+
+export const SETNOATCHECKINPAGE = "CHECKINOUTMANAGEMENT/SETNOATCHECKINPAGE";

@@ -1,0 +1,10 @@
+<svg id="round_blue_5" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <circle id="Ellipse_366" data-name="Ellipse 366" cx="50" cy="50" r="50" fill="blue" opacity="0"/>
+  <path id="Union_1" data-name="Union 1" d="M181.856,135.982l-.675-2.923,29.231-6.748.675,2.922a10,10,0,0,1-7.494,11.993l-9.743,2.25a9.99,9.99,0,0,1-11.993-7.494Zm-31.567-6.63L144,121.58a10,10,0,0,1,1.478-14.064l2.332-1.888,18.879,23.315-2.332,1.888a10,10,0,0,1-14.064-1.479ZM222,109V79h3a10,10,0,0,1,10,10V99a10,10,0,0,1-10,10ZM145.716,79.78a10,10,0,0,1-1.232-14.089l6.428-7.661A10,10,0,0,1,165,56.8l2.3,1.928L148.015,81.707Zm36.757-25.548.878-2.869a10,10,0,0,1,12.487-6.639l9.563,2.924a10,10,0,0,1,6.639,12.487L211.163,63Z" transform="translate(-135.703 -43.799)" fill="#0c90b4"/>
+  <circle id="Ellipse_363" data-name="Ellipse 363" cx="41" cy="41" r="41" transform="translate(9.297 9.201)" fill="#00bff3"/>
+  <rect id="Rectangle_2086" data-name="Rectangle 2086" width="20" height="3" rx="1.5" transform="translate(55.421 3.325) rotate(19)" fill="#0ea9d4"/>
+  <rect id="Rectangle_2087" data-name="Rectangle 2087" width="20" height="3" rx="1.5" transform="translate(95.363 39.935) rotate(87)" fill="#0ea9d4"/>
+  <rect id="Rectangle_2088" data-name="Rectangle 2088" width="20" height="3" rx="1.5" transform="translate(72.454 92.036) rotate(166)" fill="#0ea9d4"/>
+  <rect id="Rectangle_2089" data-name="Rectangle 2089" width="20" height="3" rx="1.5" transform="matrix(-0.616, -0.788, 0.788, -0.616, 20.363, 86.803)" fill="#0ea9d4"/>
+  <rect id="Rectangle_2090" data-name="Rectangle 2090" width="20" height="3" rx="1.5" transform="translate(8.582 27.427) rotate(-48)" fill="#0ea9d4"/>
+</svg>

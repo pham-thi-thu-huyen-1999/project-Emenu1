@@ -1,0 +1,59 @@
+.card-page-not-found img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    opacity: 0.2;
+    height: 500px;
+}
+
+.card-page-not-found {
+    position: absolute;
+    max-height: 560px;
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 2);
+    transition: 0.3s;
+    border-radius: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .page-not-found {
+        position: relative;
+        bottom: 520px;
+        width: 100%;
+        text-align: center;
+
+        .number-404 {
+            color: #f27922;
+            font-weight: bold;
+            font-size: 100px;
+        }
+
+        .OOPS {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .res-noti-page-not-found {
+            font-size: 50px;
+        }
+
+        .go-home-page {
+            font-size: 25px;
+        }
+    }
+}
+
+.copy-right-midota-not-found {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 10px;
+    color: #D8D0C6;
+    font-weight: 900;
+    font-size: 16px;
+}

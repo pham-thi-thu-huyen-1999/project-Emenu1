@@ -1,0 +1,101 @@
+.PDFContentSCSS-bill-printer-setting-casher {
+    font-size: smaller;
+    margin-bottom: 10px;
+
+    div.hr-setting-print {
+        border-top: 1px solid black;
+    }
+
+    .container-print-provisi {
+        background: #fff;
+        padding: 1px;
+        max-width: 700px;
+        margin: 0;
+        height: 80%;
+        border-radius: 5px;
+    }
+
+    .header-logo {
+        display: flex;
+        max-width: 540px;
+        margin: auto;
+        align-items: center;
+
+        .logo {
+            flex-basis: 20%;
+            text-align: center;
+            align-items: center;
+            margin-right: 10px;
+
+            img {
+                height: auto;
+                width: 100px;
+            }
+        }
+
+        .content-text-res {
+            margin-bottom: 10px;
+            flex: 1;
+
+            h5 {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .title-content-bill {
+        height: calc(100% - 110px);
+
+        h5 {
+            text-align: center;
+        }
+
+        .content-bill {
+            height: calc(100% - 75px);
+
+            .info-table-order {
+                //display: flex;
+
+                .table-name-staff-left {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .order-date-right {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .table-bill {
+                margin: 10px 0;
+                height: auto;
+                overflow: auto;
+                font-size: smaller;
+
+                .header-bill {
+                    // height: 50px;
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                    font-weight: bold;
+                }
+
+                .row-item {
+                    border-bottom: 1px dashed black;
+                }
+
+
+                .info-order {
+                    &.row-total {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .footer-bill {
+            text-align: center;
+            font-size: smaller;
+        }
+    }
+}

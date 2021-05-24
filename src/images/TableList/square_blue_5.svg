@@ -1,0 +1,17 @@
+<svg id="square_blue_5" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="80" height="80" rx="10" transform="translate(10 10)" fill="#00bff3"/>
+  <g id="Group_1223" data-name="Group 1223" transform="translate(-164 -156)">
+    <path id="Rectangle_7" data-name="Rectangle 7" d="M0,0H0A10,10,0,0,1,10,10V20A10,10,0,0,1,0,30H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(229 246) rotate(90)" fill="#0c90b4"/>
+    <path id="Rectangle_6" data-name="Rectangle 6" d="M10,0h0a0,0,0,0,1,0,0V30a0,0,0,0,1,0,0h0A10,10,0,0,1,0,20V10A10,10,0,0,1,10,0Z" transform="translate(229 156) rotate(90)" fill="#0c90b4"/>
+  </g>
+  <g id="Group_1224" data-name="Group 1224" transform="translate(256 -164) rotate(90)">
+    <path id="Rectangle_7-2" data-name="Rectangle 7" d="M0,0H0A10,10,0,0,1,10,10V20A10,10,0,0,1,0,30H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(229 246) rotate(90)" fill="#0c90b4"/>
+    <path id="Rectangle_8" data-name="Rectangle 8" d="M10,0h0a0,0,0,0,1,0,0V30a0,0,0,0,1,0,0h0A10,10,0,0,1,0,20V10A10,10,0,0,1,10,0Z" transform="translate(213 156) rotate(90)" fill="#0c90b4"/>
+    <path id="Rectangle_9" data-name="Rectangle 9" d="M10,0h0a0,0,0,0,1,0,0V30a0,0,0,0,1,0,0h0A10,10,0,0,1,0,20V10A10,10,0,0,1,10,0Z" transform="translate(245 156) rotate(90)" fill="#0c90b4"/>
+    <rect id="Rectangle_2059" data-name="Rectangle 2059" width="20" height="3" rx="1.5" transform="translate(208 163) rotate(180)" fill="#0ea9d4"/>
+    <rect id="Rectangle_2060" data-name="Rectangle 2060" width="20" height="3" rx="1.5" transform="translate(240 163) rotate(180)" fill="#0ea9d4"/>
+  </g>
+  <rect id="Rectangle_2056" data-name="Rectangle 2056" width="20" height="3" rx="1.5" transform="translate(40 4)" fill="#0ea9d4"/>
+  <rect id="Rectangle_2057" data-name="Rectangle 2057" width="20" height="3" rx="1.5" transform="translate(4 60) rotate(-90)" fill="#0ea9d4"/>
+  <rect id="Rectangle_2058" data-name="Rectangle 2058" width="20" height="3" rx="1.5" transform="translate(40 92)" fill="#0ea9d4"/>
+</svg>

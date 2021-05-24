@@ -1,0 +1,62 @@
+.list-addon-content {
+    text-align: center;
+
+    .list-addon {
+        padding: 0 !important;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px -10px;
+        overflow: auto;
+        max-height: calc(100vh - 300px);
+        min-height: 260px;
+
+        .addon-item {
+            background-color: #fff;
+            width: calc(25% - 20px);
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            border: solid 1px #ddd;
+
+            .content-addon {
+                text-align: left;
+                padding: 5px 20px;
+
+                .name-addon {
+                    font-size: 23px
+                }
+            }
+
+            .img-addon {
+                img {
+                    height: 285px;
+                    width: 285px;
+                    display: flex;
+                }
+            }
+
+            .check-addon {
+                text-align: left;
+                left: 10px;
+                top: 10px;
+                position: relative;
+                z-index: 999;
+
+                .chkbox {
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+.popup-edit-dish {
+    .inclue-dish {
+        .emenu-tag-input {
+            flex: 1;
+
+        }
+    }
+}

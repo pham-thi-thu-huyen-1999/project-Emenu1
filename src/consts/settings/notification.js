@@ -1,0 +1,8 @@
+export const STATUS_ACTION_CONFIRM = 1;
+export const STATUS_ACTION_CANCEL = 2;
+export const TYPE_NOTI = {
+  JUST_SHOW_CONTENT: 1,
+  GUEST_ORDER: 2,
+  HANDLE_ACTION: 3
+}
+export const STATUS_CONFIRM = 1;

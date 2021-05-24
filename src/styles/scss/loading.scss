@@ -1,0 +1,37 @@
+.e-menu-loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.15);
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: fadein 0.5s;
+
+	&:after {
+		content: '';
+		color: #f27922;
+		font-size: 6px;
+		margin: 0px auto;
+		width: 1em;
+		height: 1em;
+		border-radius: 50%;
+		position: absolute;
+		text-indent: -9999em;
+		animation: load4 2s linear infinite;
+		transform: translateZ(0);
+	}
+}
+
+@keyframes fadein {
+	from {
+		background: rgba(0, 0, 0, 0);
+	}
+
+	to {
+		background: rgba(0, 0, 0, 0.15);
+	}
+}

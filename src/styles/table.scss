@@ -1,0 +1,161 @@
+.main-tbl {
+  font-size: 20px;
+  text-align: left;
+
+  .head {
+    color: #fff;
+    background: url(../images/thead.jpg) repeat-x;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: 100% 100%;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: baseline;
+    -webkit-justify-content: baseline;
+
+    li {
+      line-height: 26px;
+      padding: 22px 15px;
+      padding-left: 0;
+    }
+
+    li.no {
+      padding-left: 10px;
+    }
+  }
+
+  .slick-slider .slick-slide:nth-child(odd) .slide-it {
+    background: #f8f8f8;
+  }
+
+  .row-its {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    border-top: none;
+    height: 75px;
+    position: relative;
+
+    li {
+      line-height: 26px;
+      padding: 9px 15px;
+      word-break: break-word;
+    }
+
+    li + li {
+      padding-left: 0;
+    }
+
+    li.acts {
+      margin: 0;
+      position: absolute;
+      right: 0px;
+      z-index: 2;
+      display: none;
+      .s-btn {
+        margin-left: 10px;
+        svg {
+          vertical-align: middle;
+          margin-bottom: 3px;
+        }
+      }
+    }
+
+    li.no {
+      width: 50px;
+    }
+
+    &:hover li.acts,
+    &:active li.acts {
+      display: inherit;
+      .animated-btn {
+        animation-duration: unset;
+      }
+    }
+  }
+
+  .slick-arrow {
+    left: -30px;
+  }
+
+  .slick-arrow.slick-disabled {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    cursor: not-allowed;
+  }
+
+  .slick-arrow.arrow-up {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background: url(../images/arrow-up.png) transparent no-repeat center center;
+    top: calc(50% - 30px);
+    top: -webkit-calc(50% - 30px);
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+  }
+
+  .slick-arrow.arrow-down {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background: url(../images/arrow-down.png) transparent no-repeat center
+      center;
+    top: calc(50% + 30px);
+    top: -webkit-calc(50% + 30px);
+    right: auto;
+    bottom: 0;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+  }
+  .text-no-data {
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large desktops, 1000px and up)
+-----------------------------------------------------*/
+@media only screen and (min-width: 1000px) {
+}
+/* Extra large devices (large desktops, 1000px and up)
+-----------------------------------------------------*/
+
+/*Medium devices (tablets, less than 1200px)
+-----------------------------------------------------*/
+@media (max-width: 1300px) {
+  .main-tbl {
+    font-size: 16px;
+    .head {
+      height: 50px;
+      li {
+        padding: 14px 15px 0;
+      }
+    }
+
+    .slick-arrow {
+      height: 25px;
+      width: 40px;
+      padding: 0;
+      left: -22px;
+      background-size: cover !important;
+      &.arrow-down {
+        top: 40%;
+      }
+      &.arrow-up {
+        top: 25%;
+      }
+    }
+
+    .row-its {
+      li.acts {
+        padding: 0;
+        padding-right: 10px;
+        .s-btn {
+          min-width: 40px;
+        }
+      }
+    }
+  }
+}

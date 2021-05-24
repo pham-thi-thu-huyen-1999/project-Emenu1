@@ -1,0 +1,12 @@
+<svg id="round_gray_7" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <circle id="Ellipse_364" data-name="Ellipse 364" cx="50" cy="50" r="50" fill="blue" opacity="0"/>
+  <path id="Path_421" data-name="Path 421" d="M-51.877,145.965c-5.522,0-10-4.821-10-10.769v-3.23h30v3.23c0,5.948-4.478,10.769-10,10.769Zm27.243-13.53-2.511-2.033,18.879-23.314,2.511,2.034c4.622,3.742,5.552,10.256,2.076,14.549l-6.294,7.771a9.694,9.694,0,0,1-7.615,3.534A11.215,11.215,0,0,1-24.634,132.435Zm-56.851-.912-6.561-7.547c-3.623-4.168-2.921-10.71,1.567-14.612l2.439-2.119,19.681,22.641L-66.8,132A11.189,11.189,0,0,1-74.12,134.8,9.658,9.658,0,0,1-81.485,131.523ZM-14,73.265l2.923-.675A10,10,0,0,1,.916,80.084l2.25,9.743a10,10,0,0,1-7.494,11.993l-2.923.675Zm-74.256,28.556A10,10,0,0,1-95.75,89.827l2.249-9.743A10,10,0,0,1-81.508,72.59l2.923.675L-85.334,102.5ZM-76.24,67.139a10,10,0,0,1,4.6-13.371l8.987-4.384a10,10,0,0,1,13.372,4.6l1.315,2.7L-74.925,69.836Zm32.606-10.17,1.268-2.719a10,10,0,0,1,13.288-4.837l9.063,4.226a10,10,0,0,1,4.837,13.289l-1.268,2.719Z" transform="translate(96.084 -46.941)" fill="#a6a6aa"/>
+  <circle id="Ellipse_363" data-name="Ellipse 363" cx="40" cy="40" r="40" transform="translate(10 9)" fill="#cbcbce"/>
+  <rect id="Rectangle_2091" data-name="Rectangle 2091" width="20" height="3" rx="1.5" transform="translate(41.304 6.74) rotate(155)" fill="#898989"/>
+  <rect id="Rectangle_2092" data-name="Rectangle 2092" width="20" height="3" rx="1.5" transform="matrix(-0.602, 0.799, -0.799, -0.602, 91.823, 69.523)" fill="#898989"/>
+  <rect id="Rectangle_2093" data-name="Rectangle 2093" width="20" height="3" rx="1.5" transform="matrix(0.174, 0.985, -0.985, 0.174, 92.348, 29.498)" fill="#898989"/>
+  <rect id="Rectangle_2094" data-name="Rectangle 2094" width="20" height="3" rx="1.5" transform="matrix(0.899, 0.438, -0.438, 0.899, 61.277, 3.875)" fill="#898989"/>
+  <rect id="Rectangle_2095" data-name="Rectangle 2095" width="20" height="3" rx="1.5" transform="matrix(1, 0.017, -0.017, 1, 39.635, 90.933)" fill="#898989"/>
+  <rect id="Rectangle_2096" data-name="Rectangle 2096" width="20" height="3" rx="1.5" transform="translate(11.178 69.076) rotate(49)" fill="#898989"/>
+  <rect id="Rectangle_2097" data-name="Rectangle 2097" width="20" height="3" rx="1.5" transform="translate(10.805 30.408) rotate(106)" fill="#898989"/>
+</svg>

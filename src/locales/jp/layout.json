@@ -1,0 +1,15 @@
+{
+  "header": {
+    "feature": {
+      "FEATURE_TABLE": "Tables",
+      "FEATURE_BOOKING_TABLE": "Booked Tables",
+      "FEATURE_KITCHEN": "Kitchen",
+      "FEATURE_BAR": "Bar",
+      "FEATURE_TAKE_AWAY": "Take Away",
+      "FEATURE_PAYMENT": "Payment",
+      "FEATURE_MANAGEMENT": "Management",
+      "FEATURE_ORDER": "Order",
+      "FEATURE_REQUEST_PAYMENT": "List Payment Request"
+    }
+  }
+}

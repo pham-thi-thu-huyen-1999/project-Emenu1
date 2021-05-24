@@ -1,0 +1,1221 @@
+$width-work-shift: 350px;
+$height-work-shift: 50px;
+
+#manage-calendar {
+
+    width: calc(100vw - 70px);
+    max-width: unset;
+    margin: 10px 20px 10px 20px;
+
+    .manage-calendar__title {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 2px;
+
+        .flex-1 {
+            flex: 1 0 calc(100% / 3);
+        }
+
+        .flex-no-wrap {
+            flex-wrap: nowrap;
+        }
+
+        .export-check-in-out {
+            margin-right: 5%;
+            margin-top: -11px;
+            border-radius: 10px;
+            padding: 4px 2px;
+            border: none;
+            outline: none;
+
+            background-color: #FD9912;
+            color: white;
+
+            cursor: pointer;
+            user-select: none;
+            box-shadow: 2px 2px 5px gray;
+
+            font-size: 14px;
+        }
+
+        .export-check-in-out:active {
+            box-shadow: unset
+        }
+
+        .export-shift-list {
+
+            margin-top: -11px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            padding: 4px 2px;
+            background-color: #FD9912;
+            color: white;
+
+            cursor: pointer;
+            user-select: none;
+            font-size: 14px;
+
+            box-shadow: 2px 2px 5px gray;
+        }
+
+        .export-shift-list:active {
+            box-shadow: unset;
+        }
+
+    }
+
+    .manage-calendar__content {
+        height: calc(100vh - 82px - 70px - 35px);
+        min-height: 400px;
+        flex-wrap: nowrap;
+
+        .w-auto {
+            width: auto;
+        }
+
+        .status-calendar {
+            font-size: 13px;
+            font-style: italic;
+        }
+
+        .manage-calendar__content-date {
+
+            display: block;
+            height: 100%;
+            padding-top: 10px;
+
+            background-color: #EEEEEE;
+
+            transition: width 0.4s linear;
+
+            .react-datepicker {
+                position: relative;
+                z-index: 3;
+
+                border: 1px solid #ffffff;
+
+                transition: opacity 0.1s linear;
+                transition-delay: 0.45s;
+                opacity: 1;
+            }
+
+            .employee-list-in-month {
+                transition: opacity 0.1s linear;
+                transition-delay: 0.45s;
+                opacity: 1;
+                width: 100%;
+                height: calc(100vh - 82px - 70px - 50px);
+                overflow: auto;
+
+                background-color: #EEEEEE;
+                padding: 0px 10px;
+
+                .managed-employee-list {
+                    width: 100%;
+
+                    .managed-employee-list__search {
+
+                        .search-text {
+                            background-image: url("./../../../images/search-icon.png");
+                            background-position: 95% center;
+                            background-repeat: no-repeat;
+                            height: 40px;
+                            padding-right: 30px;
+                            
+                            overflow: hidden;
+                            text-overflow: auto;
+                            white-space: nowrap;
+                        }
+                    }
+
+                    .employee-card {
+
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        border-bottom: 1px solid #E1E1E1;
+                        .employee-radio-card {
+                            min-width: 30px;
+                        }
+                        .employee-name-card {
+                            position: relative;
+                            font-size: 1.2em;
+                            width: 100%;
+
+                            color: #666666;
+                        }
+
+                        .employee-name-card::after {
+                            position: absolute;
+                            content: attr(data-shift);
+                            display: block;
+                            color: #FD9912;
+                            font-size: 0.7em;
+
+                        }
+
+                    }
+                }
+
+            }
+
+            .react-datepicker__header {
+                position: relative;
+
+                border-bottom: unset;
+
+                background-color: #ffffff;
+            }
+
+            .react-datepicker__day--selected {
+                border-radius: 50%;
+
+                background-color: #1A73E8;
+            }
+        }
+
+        .hide {
+            width: 0px;
+
+            .react-datepicker {
+                position: relative;
+                z-index: -1;
+
+                transition: opacity 0.2s linear;
+                opacity: 0;
+            }
+
+            .employee-list-in-month {
+                z-index: -3;
+
+                transition: opacity 0.2s linear;
+                opacity: 0;
+                display: none;
+
+                .search-text {
+                    display: none;
+                }
+            }
+        }
+
+        .m-w-0 {
+            min-width: 0%;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+
+        .manage-calendar__content-time-table {
+
+            height: 100%;
+
+            transition: width 0.4s linear;
+
+
+            .time-table__tool {
+
+                min-height: 50px;
+                align-items: center;
+                justify-content: space-between;
+
+                text-align: center;
+
+                background-color: #667E84;
+                @media (max-width: 900px) {
+                    flex-wrap: wrap;
+                }
+                .instead-hamburger {
+                    flex: 1;
+                }
+
+                .hamburger {
+                    flex: 1;
+
+                    font-size: 20px;
+                    padding-left: 10px;
+                    color: white;
+                    text-align: left;
+
+                    cursor: pointer;
+                    user-select: none;
+
+                    &.hamburger-day {
+                        flex: unset;
+                    }
+
+                    &.hamburger-month {
+                        flex: unset;
+                    }
+
+                    .employee-name {
+                        font-size: 18px;
+                        padding-left: 10px;
+                        color: white;
+                    }
+
+                }
+
+                .btn {
+                    align-items: center;
+                    border: none;
+                    outline: none;
+
+                    text-align: center;
+                    font-size: 1.2em;
+
+                    user-select: none;
+                    cursor: pointer;
+                }
+
+                .group-btn-time {
+                    flex: 1;
+                    margin: 0 auto;
+
+                    .btn--selected {
+                        background-color: #2699FB;
+                        color: white;
+                    }
+
+                    .btn_day {
+                        padding: 5px 16px;
+                        border-radius: 5px 0 0 5px;
+                        border-right: 1px solid white;
+                    }
+
+                    .btn_week {
+                        padding: 5px 16px;
+                        border-right: 1px solid white;
+                    }
+
+                    .btn_month {
+                        padding: 5px 16px;
+                        border-radius: 0 5px 5px 0;
+                    }
+                }
+
+                .export-btn {
+                    height: 30px;
+                    line-height: 30px;
+                    margin-right: 10px;
+                }
+
+                .group-btn-export {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    &.group-btn-export-day {
+                        flex: unset;
+                    }
+
+                    &.group-btn-export-month {
+                        flex: unset;
+                    }
+
+                    .export-btn {
+                        margin-top: 5px;
+                        height: 31px;
+                        line-height: 31px;
+                    }
+
+                }
+
+                .month-text {
+                    color: white;
+                    width: 76px;
+                    padding-right: 14px;
+                }
+
+
+                .less-than-btn {
+
+                    padding: 6px 10px;
+                    border-radius: 5px;
+                    margin-right: 14px;
+
+                    font-size: 12px;
+
+                    color: #898989;
+                    background-color: #FAFAFA;
+
+                }
+
+                .greater-than-btn {
+
+                    padding: 6px 10px;
+                    border-radius: 5px;
+                    margin-right: 14px;
+
+                    font-size: 12px;
+
+                    color: #898989;
+                    background-color: #FAFAFA;
+
+                }
+            }
+
+            .manage-calendar__content-time-now {
+
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 63px;
+                padding-left: 5px;
+
+                text-align: center;
+
+                color: white;
+                background-color: #779FAA;
+
+                .date-in-week-of-month {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 1.2em;
+
+                    .flex-1 {
+                        flex: 1 0 calc(100% / 7);
+                    }
+
+                }
+
+                .day-of-week-now {
+
+                    width: 100px;
+
+                }
+
+                .day-of-month-now {
+
+                    width: 100px;
+
+                    font-size: 1.4em;
+
+                }
+            }
+
+            .manage-calendar__content-time-grid {
+
+                position: relative;
+
+                height: calc(100% - 71px - 30px - 25px + 15px);
+                padding: 10px;
+                padding-right: 0px;
+                overflow-x: scroll;
+
+                background-color: #E3F2F6;
+
+                .card-work-shift-calendar {
+                    width: 100%;
+                    min-height: 100%;
+                    height: max-content;
+                    display: flex;
+                    flex-wrap: wrap;
+                    background-color: #86B0BC;
+                    justify-content: center;
+
+                    .bgc-white {
+                        background-color: white;
+                    }
+
+                    .card-work-shift-item {
+                        flex: 1 0 calc(100% / 7 - 2px);
+                        /* explanation below */
+                        margin: 1px;
+                        min-height: 70px;
+                        background-color: #E3F2F6;
+                        position: relative;
+                        text-align: left;
+                        padding: 5px 5px 23px 5px;
+
+                        .day-in-month {
+                            position: absolute;
+                            right: 2px;
+                            top: 0px;
+
+                            color: #666666;
+                            font-size: 15px;
+
+                            z-index: 1;
+                        }
+
+                        .day-current {
+                            color: white;
+                            background-color: #F27922;
+                            padding: 3px 10px;
+                            margin-top: 1px;
+                            margin-left: 2px;
+                            border-radius: 50%;
+                        }
+
+                        .btn-add-work-shift {
+                            position: absolute;
+                            left: 5px;
+                            bottom: -7px;
+
+                            align-items: center;
+                            text-align: center;
+
+                            font-size: 23px;
+                            color: #2699FB;
+
+                            cursor: pointer;
+                            user-select: none;
+                        }
+                    }
+
+                    .card-work-shift-item--out {
+                        flex: 1 0 calc(100% / 7 - 2px);
+                        /* explanation below */
+                        margin: 1px;
+                        min-height: 70px;
+                        background-color: #E1E1E1;
+                        position: relative;
+
+
+
+                        .day-in-month {
+                            position: absolute;
+                            right: 2px;
+                            top: 0px;
+
+                            color: #C1C1C1;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .bgc-white {
+                        background-color: white;
+                    }
+
+                    .card-work-shift-every-day {
+                        text-align: left;
+                        margin: 0px;
+                        padding: 0px;
+                        margin-block-start: 0em;
+                        margin-block-end: 0em;
+
+                        list-style: none;
+
+                        color: #667E84;
+
+                        .txt-line-through {
+                            text-decoration: line-through;
+                        }
+
+                        .txt-line-through::before {
+                            text-decoration: line-through;
+                        }
+
+                        .txt-underline {
+                            text-decoration: underline;
+                        }
+
+                        .txt-italic {
+                            font-style: italic;
+                        }
+
+                        .btn-warning {
+                            color: #FBB62D;
+
+                            font-size: 18px;
+                            padding-left: 2px;
+                        }
+
+                        .part-time-work-shift {
+
+                            position: relative;
+
+                            color: #2699FB;
+
+                            .btn-delete {
+                                padding-left: 5px;
+
+                                color: #FE5937;
+
+                                font-size: 18px;
+
+                                cursor: pointer;
+                                user-select: none;
+                            }
+                        }
+
+                        .part-time-work-shift::before {
+                            color: #2699FB;
+                        }
+
+
+                        .main-shift-item {
+                            user-select: none;
+                            cursor: pointer;
+                        }
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            height: 20px;
+                        }
+
+                        li::before {
+                            display: inline-block;
+                            margin-left: 5px;
+                            margin-right: 2.5px;
+
+                            content: "\2022";
+
+                            color: #667E84;
+                            font-weight: bold;
+                            font-size: 20px;
+                            text-decoration: unset;
+                        }
+                    }
+                }
+
+
+
+                .show-right-parent {
+
+                    position: absolute;
+
+                    width: 50px;
+                    height: 1px;
+
+                    background-color: #B9E9F6;
+
+                    opacity: 0;
+
+                }
+
+                .employee {
+
+                    position: absolute;
+
+                    width: $width-work-shift;
+                    height: unset;
+                    margin-left: 30px;
+
+                    background-color: #B9E9F6;
+
+                    .managed-employee-list {
+
+                        width: 100%;
+
+                        .managed-employee-list__title {
+
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            height: $height-work-shift;
+
+                            text-transform: uppercase;
+                            font-weight: bold;
+
+                            .name-work-shift {
+
+                                height: 14px;
+                                margin-left: 20px;
+
+                                font-size: 14px;
+                                line-height: 50px;
+
+                                color: #F58F1C;
+
+                            }
+
+                            .btn-add-employee {
+
+                                margin-right: 20px;
+
+                                font-size: 30px;
+                                line-height: 50px;
+
+                                color: #779FAA;
+
+                                cursor: pointer;
+                                user-select: none;
+
+                            }
+
+                            .group-action {
+                                height: 50px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                .btn-show-employee {
+                                    margin-right: 20px;
+                                    border-radius: 50%;
+                                    padding: 3px 8px;
+
+                                    font-size: 16px;
+
+                                    background-color: #779FAA;
+                                    color: #B9E9F6;
+
+                                    cursor: pointer;
+                                    user-select: none;
+                                }
+
+                                .btn-add-employee {
+
+                                    margin-right: 20px;
+
+                                    font-size: 30px;
+                                    line-height: 50px;
+
+                                    color: #779FAA;
+
+                                    cursor: pointer;
+                                    user-select: none;
+
+                                }
+                            }
+                        }
+
+                        .employee-card {
+
+                            display: flex !important;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+                            height: $height-work-shift;
+                            padding-left: 10px;
+                            padding-right: 10px;
+
+                            .employee-card-info__name {
+                                .info-breaked {
+
+                                    margin: 3px;
+
+                                    font-size: 14px;
+
+                                    color: #FD9912;
+
+                                }
+                            }
+
+                            .btn-break {
+                                width: 90px;
+                                padding: 4px 8px;
+                                border: none;
+                                border-radius: 15px;
+                                outline: none;
+
+                                font-size: 10px;
+
+                                background-color: #667E84;
+                                color: white;
+
+                                cursor: pointer;
+                                user-select: none;
+                            }
+
+                            .btn-cancel-break {
+                                background-color: #F58F1C;
+                            }
+
+                            .btn-delete {
+                                color: #FE5937;
+
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+
+
+
+                .wrap-time-line {
+                    width: unset;
+                    height: $height-work-shift;
+                    padding-right: 10px;
+
+                    user-select: none;
+
+                    .time-line {
+                        display: block;
+                        align-items: center;
+                        width: 100px;
+                        height: 50px;
+                        font-size: 16px;
+
+                        text-align: center;
+
+                    }
+
+                    .time-line-black {
+                        position: relative;
+                        top: -59px;
+                        left: 110px;
+                        z-index: 2;
+
+                        display: inline-block;
+                        width: unset;
+                        height: 1px;
+
+                        background: #86B0BC;
+
+                        opacity: 0.6;
+                        user-select: none;
+
+                    }
+
+                }
+
+            }
+
+            .card-work-shift-list::after {
+                content: "";
+
+                position: absolute;
+                left: calc(100% + 5px + 5px/6 - 0.5px);
+                top: (-10px);
+
+                width: 1px;
+                height: calc(100% + 10px);
+                background-color: #86B0BC;
+            }
+
+            .card-work-shift-list {
+                position: relative;
+
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &:not(:first-child) {
+                    margin-left: calc(5px + 5px/6);
+                }
+
+                &:not(:last-child) {
+                    margin-right: calc(5px + 5px/6);
+                }
+
+                .card-work-shift {
+                    width: 100%;
+                    margin-top: 10px;
+                    border-radius: 7px;
+
+                    background-color: white;
+
+                    .card-work-shift__title {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        padding: 10px;
+                        border-top-right-radius: 7px;
+                        border-top-left-radius: 7px;
+
+                        background-color: #779FAA;
+                        color: white;
+
+                    }
+
+                    .card-work-shift__info {
+                        padding: 5px 10px 10px;
+
+                        .card-work-shift__info-item {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            .info-item-link {
+                                color: #898989;
+
+                                user-select: none;
+
+                            }
+
+                            .info-item-link--selected {
+                                color: #FD9912;
+                                cursor: pointer;
+                                user-select: none;
+
+                            }
+
+                            .info-item-link--selected::after {
+                                content: "";
+                                margin-top: -5px;
+                                height: 1px;
+                                display: block;
+                                background-color: #FD9912;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// for PopupAskForBreak
+.popup-ask-for-break {
+    max-width: 800px !important;
+
+    .btn-add {
+        height: 50px;
+        padding: 0px 25px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+
+        font-size: 1.2em;
+        line-height: 50px;
+
+        background-color: #F58F1C;
+        color: white;
+
+        user-select: none;
+        cursor: pointer;
+
+    }
+}
+
+// for PopupAddEmployee
+.popup-add-employee-to-shift {
+    max-width: 50vw !important;
+    height: fit-content;
+    padding-left: 100px !important;
+    padding-right: 50px !important;
+
+    .popup-ask-for-break__title {
+        font-size: 26px;
+        font-weight: 420;
+
+    }
+
+    .popup-add-employee-to-shift__search {
+        display: flex;
+        justify-content: center;
+
+        .search-btn {
+            display: inline-block;
+            width: 120px;
+            padding: 7px 10px;
+            margin-left: 15px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+
+            text-align: center;
+            font-size: 1.2em;
+
+            user-select: none;
+            cursor: pointer;
+
+            background-color: #F58F1C;
+            color: white;
+
+        }
+
+        .search-text {
+            flex: 1;
+            height: 40px;
+
+        }
+    }
+
+    .btn-add {
+        height: 50px;
+        padding: 0px 25px;
+        margin-top: 10px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+
+        font-size: 1.2em;
+        line-height: 50px;
+
+        background-color: #F58F1C;
+        color: white;
+
+        user-select: none;
+        cursor: pointer;
+
+    }
+
+    .popup-add-employee-to-shift__content {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        height: 350px;
+        overflow: auto;
+
+        .employee-name {
+            padding: 10px;
+
+        }
+    }
+}
+
+.popup-worked-employee-list {
+
+    height: 450px;
+
+    .worked-employee-list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .worked-employee__title {
+            height: 40px;
+        }
+
+        .worked-employee__info {
+            height: 60px;
+            width: 100%;
+            padding-bottom: 10px;
+            margin-top: -15px;
+            justify-content: start;
+
+            .worked-employee-search {
+                display: flex;
+
+                .search-text {
+                    width: 250px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+            }
+
+            .worked-employee-time {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                padding-left: 10%;
+            }
+        }
+
+        .worked-employee__table {
+            flex: 1 1 auto;
+        }
+    }
+
+}
+
+.popup-add-work-shift {
+    max-width: 600px !important;
+
+    .day-title {
+        margin-left: -10px;
+    }
+
+    .popup-add-work-shift__title {
+        font-size: 26px;
+        font-weight: 420;
+    }
+
+    .btn-add {
+        height: 50px;
+        padding: 0px 25px;
+        margin-top: 10px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+
+        font-size: 1.2em;
+        line-height: 50px;
+
+        background-color: #F58F1C;
+        color: white;
+
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .popup-add-work-shift__content {
+        margin-left: 25px;
+
+        .employee-name {
+            padding: 10px;
+        }
+    }
+}
+
+.popup-off-employee-list {
+    height: 450px;
+
+    .off-employee-list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .off-employee__info {
+            justify-content: start;
+            width: 100%;
+            margin-top: -15px;
+            padding-bottom: 10px;
+
+            .off-employee-search {
+
+                display: flex;
+
+                .search-text {
+                    width: 250px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+            }
+
+            .off-employee-time {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                padding-left: 10%;
+            }
+        }
+
+        .off-employee-list__table {
+            flex: 1;
+        }
+    }
+
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.popup-off-work-shift-info {
+    max-width: 550px !important;
+
+    .off-work-shift-info__content {
+        padding: 10px 60px 20px;
+        text-align: left;
+
+        .content-title {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .content-status {
+            margin-top: 20px;
+
+            color: #FBB62D;
+        }
+
+        .content-time {
+            color: #666666;
+        }
+
+        .content-reason {
+            font-style: italic;
+            color: #666666;
+        }
+
+        .content-thank {
+            margin-bottom: 20px;
+
+            font-style: italic;
+            color: #666666;
+
+        }
+
+        .btn-cancel-request {
+            background-color: #F58F1C;
+        }
+    }
+}
+
+// for Popup show employee in part time < 2 hour
+
+.popup-show-employee {
+    max-width: 800px !important;
+
+    .btn-add {
+        height: 50px;
+        padding: 0px 25px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+
+        font-size: 1.2em;
+        line-height: 50px;
+
+        background-color: #F58F1C;
+        color: white;
+
+        user-select: none;
+        cursor: pointer;
+
+    }
+
+    &__content {
+        .title {
+            font-size: 1.5em;
+        }
+
+        .employee {
+            width: 100%;
+
+            .employee-card {
+
+                display: inline-flex !important;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: $height-work-shift;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                .employee-card-info__name {
+                    .info-breaked {
+
+                        margin: 3px;
+
+                        font-size: 14px;
+
+                        color: #FD9912;
+
+                    }
+                }
+
+                .btn-break {
+                    width: 90px;
+                    padding: 4px 8px;
+                    border: none;
+                    border-radius: 15px;
+                    outline: none;
+
+                    font-size: 10px;
+
+                    background-color: #667E84;
+                    color: white;
+
+                    cursor: pointer;
+                    user-select: none;
+                }
+
+                .btn-cancel-break {
+                    background-color: #F58F1C;
+                }
+
+                .btn-delete {
+                    color: #FE5937;
+
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+}

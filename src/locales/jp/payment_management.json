@@ -1,0 +1,83 @@
+{
+  "payment_order": {
+    "title": "フードリスト",
+    "pay_by_item": "アイテムを選択して支払う",
+    "no": "No",
+    "food_name": "名前",
+    "order_time": "時は過ぎた",
+    "quantity": "量",
+    "status": "状態",
+    "is_bring_home": "家に持ち帰る",
+    "price": "価格",
+    "payment_selection": {
+      "title": "お支払い方法"
+    },
+    "money_calculation": {
+      "title": "一人一人のお金",
+      "quantity": "人は数える",
+      "each_person_money": "共有金額"
+    },
+    "money_info": {
+      "total": "合計",
+      "additional_fee": "追加料金",
+      "tax": "税金",
+      "promotion": "プロモーション",
+      "voucher_placeholder": "バウチャーを入力してください",
+      "final_price": "合計金額",
+      "post_money_without_discount": "合計",
+      "voucher": "バウチャー",
+      "post_total": "ポストトータル",
+      "bill_promotion": "ビル",
+      "drink_promotion": "飲み物",
+      "food_promotion": "食品",
+      "error_voucher": "バウチャーコードが存在しません",
+      "voucher_code": ""
+    },
+    "payment_method": {
+      "title": "お支払い方法",
+      "note": "注意",
+      "pay_by_cash": "現金で支払う",
+      "pay_by_atm": "クレジットカードで支払う",
+      "pay_by_e_wallet": "支払いのために顧客に請求書のQRコードを表示する"
+    },
+    "cancel": "バック",
+    "confirm": "確認",
+    "checkout": "支払う",
+    "export_temp_bill": "事前請求書を印刷する",
+    "export_bill": "請求後の印刷",
+    "ok": "Ok",
+    "notiPaymentSuccess": "支払いの成功",
+    "notiPaymentFail": "支払いエラー",
+    "payment_methods": {
+      "CASH": "現金",
+      "ATM": "ATM",
+      "MOMO": "MOMO",
+      "ZALOPAY": "ZALOPAY",
+      "VNPAY": "VNPAY"
+    },
+    "payment_confirmation": {
+      "title": "請求書の支払い",
+      "order_no": "注文番号",
+      "staff_name": "スタッフ名",
+      "confirm_checkout": "この請求書を支払う",
+      "food_list": {
+        "name": "食品名",
+        "quantity": "量",
+        "unit_price": "単価",
+        "total": "合計"
+      }
+    },
+    "modal_swal": {
+      "accept": "本気ですか"
+    },
+    "money_calculator_modal": {
+      "title": "請求書の支払い",
+      "default_money_title": "デフォルトの金額",
+      "submit_button": "支払う",
+      "total": "合計",
+      "input_money": "顧客が与える",
+      "remain_money": "残りのお金",
+      "not_get_remain_money": "顧客は残りのお金を取得しません"
+    }
+  }
+}

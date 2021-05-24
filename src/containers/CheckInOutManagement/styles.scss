@@ -1,0 +1,1283 @@
+#main-full-header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.check-in-out-management {
+    padding-bottom: 0px !important;
+
+    // start scss use many places
+
+    .full-p-height {
+        height: 100% !important;
+    }
+
+    .full-p-width {
+        width: 100% !important;
+    }
+
+    .text-upper {
+        text-transform: uppercase;
+    }
+
+    .txt-blue {
+        color: #2699FB;
+    }
+
+    .txt-orange {
+        color: #F27922;
+    }
+
+    .txt-red {
+        color: #FB2626;
+    }
+
+    .no-border-radius {
+        border-radius: unset !important;
+    }
+
+    .btn {
+        align-items: center;
+        border: none;
+        outline: none;
+
+        text-align: center;
+        font-size: 1.2em;
+
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .text-over {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    $sizes: 80,
+    82,
+    84,
+    86,
+    88,
+    90,
+    92,
+    94,
+    96,
+    98,
+    99;
+
+    @each $size in $sizes {
+        .w-#{$size} {
+            width: #{$size}#{'%'} !important;
+        }
+
+        .h-#{$size} {
+            height: #{$size}#{'%'} !important;
+        }
+    }
+
+    //end scss use many places
+
+
+    .body-management {
+        height: 100%;
+        padding: 0px !important;
+
+        .header-checkin {
+            display: flex;
+            padding: 10px 20px 0px 0px;
+            justify-content: space-between;
+            align-items: flex-start;
+            min-height: 100px;
+            user-select: none;
+            .logo-omenu {
+                height: 200px;
+                width: 200px;
+                .omenu-icon {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+            }
+            .user-name {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .name {
+                    font-size: 15px;
+                }
+            }
+            .logout {
+                width: 200px;
+                font-size: 20px;
+                .logout-button-group {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 30px;
+                    position: relative;
+                    cursor: pointer;
+
+                    .logout-icon-container {
+                        width: 50px;
+                        height: 50px;
+                        position: absolute;
+                        right: -30px;
+                        top: 10px;
+
+                        .logout-icon {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .wrap-box-full-screen {
+            width: 100% !important;
+            height: 100% !important;
+            max-width: 100% !important;
+            border-radius: 0px !important;
+        }
+        .wrap-box-management {
+            display: flex;
+            flex-direction: column;
+            height: 90%;
+            width: 70%;
+
+
+            .function-list {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                user-select: none;
+
+                .function-item {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .function-item__icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 7em;
+                        height: 7em;
+                        border: 2px solid #2699fb;
+                        border-radius: 3.5em;
+                        cursor: pointer;
+                    }
+
+                    .function-item__text {
+                        padding-top: 10px;
+
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 0.9em;
+                    }
+                }
+
+                .function-item--selected {
+                    .function-item__icon {
+                        background-color: #2699fb;
+                    }
+                }
+            }
+
+            .time-now {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .time {
+                    width: 30%;
+                    min-width: 240px;
+                    height: 100px;
+                    border: 2px solid #dddddd;
+                    border-radius: 10px;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 3em;
+                    color: #666666;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .hour {
+                        min-width: 70px;
+                    }
+                    .minute {
+                        min-width: 70px;
+                    }
+                    .second {
+                        min-width: 70px;
+                    }
+                }
+
+                .day {
+                    padding-top: 10px;
+                    font-weight: bold;
+                }
+            }
+
+
+        }
+
+        .popup-box--no-pad {
+            padding: 0px !important;
+            max-width: 100% !important;
+
+        }
+
+        .add-ot-shift {
+
+            .contain-replace-tbl {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                width: 100%;
+            }
+
+            .shift-contain {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                padding: 20px 10px;
+            }
+
+            .employee {
+                overflow: auto;
+                background-color: #EEEEEE;
+                border-radius: 10px 0px 0px 10px;
+
+                .employee-list-in-month {
+                    transition: opacity 0.1s linear;
+                    transition-delay: 0.45s;
+                    opacity: 1;
+                    width: 100%;
+
+
+                    background-color: #EEEEEE;
+                    padding: 20px 20px 0px;
+
+                    .managed-employee-list {
+                        width: 100%;
+
+                        .managed-employee-list__search {
+
+                            .search-text {
+                                background-image: url("./../../images/search-icon.png");
+                                background-position: 95% center;
+                                background-repeat: no-repeat;
+                                height: 40px;
+                                padding-right: 30px;
+                            }
+                        }
+
+                        .employee-card {
+
+                            width: 100%;
+                            height: 100px;
+                            display: flex;
+                            justify-content: left;
+                            align-items: center;
+                            border-bottom: 1px solid #E1E1E1;
+
+                            .employee-name-card {
+                                position: relative;
+                                font-size: 1.2em;
+                                width: 100%;
+
+                                color: #666666;
+                            }
+
+                            .employee-name-card::after {
+                                position: absolute;
+                                content: attr(data-shift);
+                                display: block;
+                                color: #FD9912;
+                                font-size: 0.7em;
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+
+
+            .contain-overtime-table {
+                flex: 1;
+                display: flex;
+                margin-bottom: 15px;
+
+                .overtime-tbl {
+                    height: 100%;
+                    width: 100%;
+
+                    .txt-accepted {
+                        color: #2699FB;
+                    }
+
+                    .txt-cancel {
+                        color: #FF0000;
+                    }
+
+                    .wrap-waiting-status {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .txt-waiting {
+                            color: #F58F1C;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+
+            .add-shift-group {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: auto;
+
+
+                .form-group {
+                    position: relative;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 80px;
+
+                    .control-label {
+                        flex: 1;
+                        margin-right: 20px;
+                        text-align: right;
+                    }
+
+                    .select-date {
+                        flex: 1;
+                        position: relative;
+
+                        .form-control {
+                            width: 250px;
+                            height: 40px;
+                            padding-left: 20px;
+                            color: #666666;
+                        }
+
+                        .icon-calendar {
+                            position: absolute;
+                            right: 10px;
+                            top: 12px;
+                            left: 224px;
+                            color: #f27922;
+                        }
+                    }
+
+                }
+
+                .shift-group {
+                    flex: 1;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    overflow: auto;
+
+                    .has-shift {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+
+
+                        .text-select-shift {
+                            flex: 1;
+                            height: 100%;
+                            font-size: 18px;
+                            text-align: right;
+                            margin-right: 20px;
+                        }
+
+                        .group-checkbox-shift {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            overflow: auto;
+                            height: 100%;
+
+                            .checbox-item-shift {
+                                width: 100%;
+                                display: flex;
+                                justify-content: flex-start;
+                                font-size: 18px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    .no-shift {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        user-select: none;
+
+                        .ohazo-logo {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            opacity: 0.3;
+                            overflow: hidden;
+                            height: 100%;
+                            max-width: 100%;
+                            object-fit: contain;
+                            -webkit-user-drag: none;
+                        }
+
+                        .no-shift__text {
+                            font-weight: bold;
+                            font-size: 1.5em;
+                        }
+
+                    }
+                }
+
+
+            }
+
+            .btn-group {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .contain-calendar-full-screen {
+            width: 100% !important;
+            padding: 20px 30px 30px 30px;
+            height: 100%;
+            margin-top: 1px !important;
+            margin-bottom: 10px !important;
+            background-color: white;
+        }
+        .contain-calendar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 98%;
+            margin: 0 auto;
+
+            .calendar-text {
+                text-transform: uppercase;
+                text-align: center;
+                height: 35px;
+                line-height: 35px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .tool-bar {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                margin-bottom: 1px;
+                background-color: #667E84;
+
+                .number-shift {
+                    flex: 1;
+                    color: white;
+                    margin-left: 14px;
+                }
+
+                .group-btn-category {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .btn--selected {
+                        background-color: #2699FB;
+                        color: white;
+                    }
+
+                    .btn_week {
+                        padding: 5px 16px;
+                        border-radius: 5px 0 0 5px;
+                        border-right: 1px solid white;
+                    }
+
+                    .btn_month {
+                        padding: 5px 16px;
+                        border-radius: 0 5px 5px 0;
+                    }
+
+                }
+
+                .group-btn-change-date {
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    .less-than-btn {
+
+                        padding: 6px 10px;
+                        border-radius: 5px;
+                        margin-right: 14px;
+
+                        font-size: 12px;
+
+                        color: #898989;
+                        background-color: #FAFAFA;
+
+                    }
+
+                    .greater-than-btn {
+
+                        padding: 6px 10px;
+                        border-radius: 5px;
+                        margin-right: 14px;
+
+                        font-size: 12px;
+
+                        color: #898989;
+                        background-color: #FAFAFA;
+
+                    }
+
+                    .month-text {
+                        color: white;
+                        width: 76px;
+                        padding-right: 14px;
+                    }
+                }
+            }
+
+            .calendar {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                background-color: #E3F2F6;
+
+                .calendar__date {
+                    flex-direction: row;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 63px;
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                    background-color: #779FAA;
+
+                    .day-of-week-item {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .day-of-week-now {}
+
+                        .day-of-month-now {
+                            font-size: 1.2em;
+                        }
+                    }
+
+                    .date-in-week-of-month {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 1.2em;
+
+                        .flex-1 {
+                            flex: 1;
+                        }
+
+                    }
+                }
+
+                .calendar__grid {
+                    flex: 1;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    overflow: auto;
+                    font-weight: bold;
+                    min-height: calc(100vh - 280px);
+
+                    .card-work-shift-list {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        overflow: auto;
+                        height: calc(100vh - 280px);
+                        padding-left: 0.3%;
+                        padding-right: 0.3%;
+                        padding-bottom: 10px;
+                        scrollbar-width: 1;
+
+                        &:not(:last-child) {
+                            border-right: 1px solid #86B0BC;
+                        }
+
+                        &::-webkit-scrollbar {
+                            width: 6px;
+                        }
+
+                        .card-work-shift {
+                            width: 100%;
+                            min-height: 170px;
+                            height: fit-content;
+                            margin-top: 10px;
+                            border-radius: 7px;
+                            cursor: pointer;
+                            user-select: none;
+                            background-color: white;
+
+                            .card-work-shift__title {
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                padding: 10px;
+                                border-top-right-radius: 7px;
+                                border-top-left-radius: 7px;
+
+                                background-color: #779FAA;
+                                color: white;
+
+                            }
+
+                            .card-work-shift__info {
+                                padding: 5px 10px 10px;
+                                color: #898989;
+                                font-weight: bold;
+
+                                .card-work-shift__info-item {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 100%;
+
+                                    .info-item-link {
+                                        color: #898989;
+
+                                        user-select: none;
+
+                                    }
+
+                                    .info-item-link--selected {
+                                        color: #FD9912;
+                                        cursor: pointer;
+                                        user-select: none;
+
+                                    }
+
+                                    .info-item-link--selected::after {
+                                        content: "";
+                                        margin-top: -5px;
+                                        height: 1px;
+                                        display: block;
+                                        background-color: #FD9912;
+
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+
+
+                    .card-work-shift-calendar {
+                        width: 100%;
+                        min-height: 100%;
+                        height: max-content;
+                        display: flex;
+                        flex-wrap: wrap;
+                        background-color: #86B0BC;
+                        justify-content: center;
+                        height: calc(100vh - 280px);
+                        overflow: auto;
+
+                        &::-webkit-scrollbar {
+                            width: 6px;
+                            background-color: white;
+                        }
+
+
+                        .bgc-white {
+                            background-color: white;
+                        }
+
+                        .card-work-shift-item {
+                            flex: 1 0 calc(100% / 7 - 0.15%);
+                            /* explanation below */
+                            margin: 0.075%;
+                            min-height: 70px;
+                            background-color: #E3F2F6;
+                            position: relative;
+                            text-align: left;
+                            padding: 5px;
+
+                            .day-in-month {
+                                position: absolute;
+                                right: 2px;
+                                top: 0px;
+
+                                color: #666666;
+                                font-size: 15px;
+
+                                z-index: 5;
+                            }
+
+                            .day-current {
+                                color: white;
+                                background-color: #F27922;
+                                padding: 3px 10px;
+                                margin-top: 1px;
+                                margin-left: 2px;
+                                border-radius: 50%;
+                            }
+
+                            .btn-add-work-shift {
+
+                                align-items: center;
+                                text-align: center;
+
+                                font-size: 23px;
+                                color: #2699FB;
+
+                                cursor: pointer;
+                                user-select: none;
+                            }
+                        }
+
+                        .card-work-shift-item--out {
+                            flex: 1 0 calc(100% / 7 - 0.15%);
+                            /* explanation below */
+                            margin: 0.075%;
+                            min-height: 70px;
+                            background-color: #E1E1E1;
+                            position: relative;
+
+
+
+                            .day-in-month {
+                                position: absolute;
+                                right: 2px;
+                                top: 0px;
+
+                                color: #C1C1C1;
+                                font-size: 15px;
+                            }
+                        }
+
+                        .bgc-white {
+                            background-color: white;
+                        }
+
+                        .card-work-shift-every-day {
+                            text-align: left;
+                            margin: 0px;
+                            padding: 0px;
+                            margin-block-start: 0em;
+                            margin-block-end: 0em;
+
+                            list-style: none;
+
+                            color: #667E84;
+
+                            .txt-line-through {
+                                text-decoration: line-through;
+                            }
+
+                            .txt-line-through::before {
+                                text-decoration: line-through;
+                            }
+
+                            .txt-underline {
+                                text-decoration: underline;
+                            }
+
+                            .txt-italic {
+                                font-style: italic;
+                            }
+
+                            .btn-warning {
+                                color: #FBB62D;
+
+                                font-size: 18px;
+                                padding-left: 2px;
+                            }
+
+                            .main-shift-item {
+                                cursor: pointer;
+                                // position: relative;
+
+                                .label-status {
+                                    margin-left: auto;
+                                    margin-right: 14px;
+                                    color: #2699FB;
+
+                                    font-size: 1em;
+
+                                    cursor: pointer;
+                                    user-select: none;
+                                }
+                            }
+
+                            .part-time-work-shift::before {
+                                color: #2699FB;
+                            }
+
+
+                            .main-shift-item {
+                                user-select: none;
+                                cursor: pointer;
+                            }
+
+                            li {
+                                display: flex;
+                                align-items: center;
+                                height: 20px;
+                            }
+
+                            li::before {
+                                display: inline-block;
+                                margin-left: 5px;
+                                margin-right: 2.5px;
+
+                                content: "\2022";
+
+                                color: #667E84;
+                                font-weight: bold;
+                                font-size: 20px;
+                                text-decoration: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.popup-take-leave-in-out {
+    $col-left: 20%;
+    $col-right: 80%;
+    max-width: 60% !important;
+    min-height: 87vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+
+    .text-upper {
+        text-transform: uppercase;
+    }
+
+    .contain-take-leave-table {
+        flex: 1;
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+
+        .take-leave-tbl {
+            width: 100%;
+
+            .txt-accepted {
+                color: #2699FB;
+            }
+
+            .txt-cancel {
+                color: #FF0000;
+            }
+
+            .wrap-waiting-status {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .txt-waiting {
+                    color: #F58F1C;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    .take-leave {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        width: 100%;
+        margin-bottom: 20px;
+
+        .reason {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 200px;
+
+            .reason__lable {
+                width: $col-left;
+                text-align: left;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+
+            .reason__txt {
+                width: $col-right;
+            }
+        }
+
+
+
+        .form-group {
+            position: relative;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+            height: 80px;
+
+            .control-label {
+                width: $col-left;
+                text-align: left;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+
+            .select-date {
+                width: $col-right;
+                position: relative;
+
+                .form-control {
+                    width: 250px;
+                    height: 40px;
+                    padding-left: 20px;
+                    color: #666666;
+                }
+
+                .icon-calendar {
+                    position: absolute;
+                    right: 10px;
+                    top: 12px;
+                    left: 224px;
+                    color: #f27922;
+                }
+            }
+
+        }
+
+
+
+
+        .shift-group {
+            flex: 1;
+            width: 100%;
+            height: 100px;
+            overflow: auto;
+
+            .has-shift {
+                display: flex;
+                width: 100%;
+                height: 100%;
+
+
+                .text-select-shift {
+                    width: $col-left;
+                    height: 100%;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    text-align: left;
+
+                }
+
+                .group-checkbox-shift {
+                    width: $col-right;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: auto;
+                    height: 100%;
+                    font-weight: bold;
+
+                    .checbox-item-shift {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .no-shift {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                user-select: none;
+
+                .ohazo-logo {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    opacity: 0.3;
+                    overflow: hidden;
+                    height: 100%;
+                    max-width: 100%;
+                    object-fit: contain;
+                    -webkit-user-drag: none;
+                }
+
+                .no-shift__text {
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+
+            }
+        }
+
+
+    }
+
+
+}
+
+///////////////////// start
+.popup-shift-info-in-checkinout {
+    max-width: 40% !important;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 10px;
+    color: #666666;
+
+    .txt-blue {
+        color: #2699FB;
+    }
+
+    .txt-orange {
+        color: #F27922;
+    }
+
+    .txt-red {
+        color: #FB2626;
+    }
+
+    .header-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 1.3em;
+
+        .work-time {
+            display: flex;
+            flex-direction: column;
+
+            .shift-name {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .body-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.3em;
+
+
+        .number-emloyee-work {
+            font-style: italic;
+            border-bottom: 2px solid #666666;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .title {
+            user-select: none;
+        }
+
+        .name-employee-replace {
+            color: #2699FB;
+        }
+    }
+}
+
+//////////////////// end
+
+///////////////////// start
+.popup-employee-list-in-checkinout {
+    max-width: 60% !important;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #666666;
+
+    .title {
+        font-size: 1.3em;
+        text-transform: uppercase;
+    }
+
+    .body-content {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+        padding: 10px 20px;
+        overflow: auto;
+
+        .employee {
+            width: calc(100% / 3);
+        }
+    }
+}
+
+//////////////////// end
+
+///////////////////// start
+.popup-take-leave-in-checkinout {
+    max-width: 40% !important;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #666666;
+
+    .title {
+        font-size: 1.3em;
+        text-transform: uppercase;
+    }
+
+}
+
+//////////////////// end
+
+
+.alert-error {
+    font-weight: bold;
+}
+
+@media all and (max-width: 1024px) {
+    .check-in-out-management {
+
+        .body-management {
+            height: 100%;
+            padding: 0px !important;
+
+            .wrap-box-management {
+                display: flex;
+                flex-direction: column;
+                height: 90%;
+                width: 70%;
+
+
+                .function-list {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    overflow: auto;
+                    align-items: center;
+                    user-select: none;
+
+                    .function-item {
+                        margin-top: 20px;
+                        flex: none;
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .function-item__icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 7em;
+                            height: 7em;
+                            border: 2px solid #2699fb;
+                            border-radius: 3.5em;
+                            cursor: pointer;
+                        }
+
+                        .function-item__text {
+                            padding-top: 10px;
+
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 1em;
+                        }
+                    }
+
+                    .function-item--selected {
+                        .function-item__icon {
+                            background-color: #2699fb;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

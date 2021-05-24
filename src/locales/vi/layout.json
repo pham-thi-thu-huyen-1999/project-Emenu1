@@ -1,0 +1,15 @@
+{
+  "header": {
+    "feature": {
+      "FEATURE_TABLE": "Bàn",
+      "FEATURE_BOOKING_TABLE": "Đặt Bàn",
+      "FEATURE_KITCHEN": "Bếp",
+      "FEATURE_BAR": "Bar",
+      "FEATURE_TAKE_AWAY": "Mang Về",
+      "FEATURE_PAYMENT": "Thanh Toán",
+      "FEATURE_MANAGEMENT": "Quản Lý",
+      "FEATURE_ORDER": "Order Món",
+      "FEATURE_REQUEST_PAYMENT": "Yêu Cầu Thanh Toán"
+    }
+  }
+}

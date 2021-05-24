@@ -1,0 +1,275 @@
+.bglogin {
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mlr005card {
+  display: flex;
+  // padding-left: 5%;
+  // padding-right: 5%;
+}
+
+.cardlogin>img {
+  // height: 15.3%;
+  // position: relative;
+  // left: 50%;
+  // transform: translate(-50%, 0px);
+  // margin-top: 30px;
+}
+
+.cardlogin {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  // box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 2);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 15px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+
+  .field-input {
+    position: relative;
+
+    .iconLogin {
+      margin-left: 5px;
+      position: absolute;
+      color: #f47b05;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      top: 12px;
+    }
+
+    .icon-showpass {
+      position: absolute;
+      right: 5px;
+      color: #f47b05;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      right: 10px;
+      top: 18px;
+    }
+  }
+
+  .title-welcome {
+    padding: 10px;
+    font-size: 20px;
+    color: #FF5722;
+  }
+
+  .btn-login-text-savelogin {
+    margin-top: 5px;
+
+    .text-contact {
+      flex-basis: 50%;
+    }
+
+    .content-btn-right {
+      flex: 1;
+      padding: 5px;
+
+      .btn-sub-login {
+        text-align: end;
+
+        .bntlogin {
+          width: 80%;
+          background-color: #fd7e0d;
+          /* Green */
+          border: none;
+          color: white;
+          height: 50px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border-radius: 30px;
+          // margin-bottom: 25px;
+
+        }
+      }
+    }
+
+  }
+
+
+}
+
+.h1 {
+  font-size: 30px;
+}
+
+.h3 {
+  font-size: 20px;
+}
+
+.h4 {
+  font-size: 16px;
+}
+
+.h5 {
+  font-size: 14px;
+}
+
+
+.login,
+.loginwithFbGg,
+.inputname,
+.loginname,
+.loginpass,
+.inputpass,
+.password,
+.messen,
+.bntlogin {
+  /* position: absolute; */
+  // width: 100%;
+}
+
+.login {
+  text-align: center;
+  // margin-top: 1em;
+}
+
+.loginname {
+  margin-top: 5px;
+}
+
+.inputlogin {
+  padding-left: 30px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #e6f1d8;
+  border-radius: 5px;
+}
+
+.inputlogin:hover {
+  border-bottom: 1px solid #ddd;
+}
+
+.inputlogin:focus {
+  border-bottom: 1px solid #ddd;
+}
+
+.inputname {
+  margin-top: 1em;
+}
+
+.loginpass {
+  margin-top: 1em;
+}
+
+.inputpass {
+  margin-top: 1em;
+}
+
+.password {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Customize the label (the container) */
+.checksave {
+  display: flex;
+  position: relative;
+  // padding-left: 20px;
+  // margin-top: -7px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checksave input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkSaveMark {
+  // position: absolute;
+  margin-right: 5px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.checksave:hover input~.checkSaveMark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checksave input:checked~.checkSaveMark {
+  background-color: #fd7e0d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkSaveMark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checksave input:checked~.checkSaveMark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checksave .checkSaveMark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.signup {
+  margin-top: 0.5em;
+}
+
+.messen {
+  color: #f44336;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.loginwithFbGg {
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 99%);
+  background-color: #eeeeee;
+  height: 13%;
+  border-top: 1px solid #ebdddd;
+  border-radius: 0px 0px 15px 15px;
+  padding-top: 6px;
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 2);
+}
+
+.eyeAction:hover {
+  color: #83c75d;
+}

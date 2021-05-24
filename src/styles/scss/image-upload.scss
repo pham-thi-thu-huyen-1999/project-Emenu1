@@ -1,0 +1,131 @@
+.emenu-image-upload {
+
+  .upload-box {
+    width: 300px;
+    height: 280px;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+
+    .add-new-image {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 15px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background: #f27922;
+      }
+    }
+
+    .uploaded-img {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .image-big {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      border-radius: 20px;
+    }
+
+    .slider-images {
+      width: 100%;
+    }
+
+    .image-box {
+      opacity: 0.5;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 0.3s;
+      border: 1px solid rgba(0, 0, 0, 0);
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.selected {
+        opacity: 1;
+        border: 1px solid #f27922;
+      }
+    }
+
+    .slick-slider {
+      height: 80px;
+      padding: 0 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .slick-list {
+        flex: 1 1;
+      }
+
+      .slick-arrow {
+        display: flex;
+        position: relative;
+        transform: none;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        box-shadow: none;
+        border-radius: 10px;
+        min-width: 30px;
+        max-width: 30px;
+        top: 0;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.056);
+        }
+
+        &:active {
+          background: rgba(0, 0, 0, 0.087);
+        }
+
+        &.slick-disabled {
+          opacity: 0;
+        }
+      }
+    }
+
+    .slick-slide {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        .image-small {
+          width: 60px;
+          height: 60px;
+        }
+
+        .activeimage {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

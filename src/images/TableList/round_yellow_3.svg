@@ -1,0 +1,8 @@
+<svg id="round_yellow_3" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <circle id="Ellipse_367" data-name="Ellipse 367" cx="50" cy="50" r="50" fill="blue" opacity="0"/>
+  <path id="Union_2" data-name="Union 2" d="M449.141,126.99l-2.6-1.5,15-25.981,2.6,1.5a10,10,0,0,1,3.66,13.66l-5,8.66a9.994,9.994,0,0,1-13.66,3.66ZM381.2,123.33l-5-8.66a10,10,0,0,1,3.66-13.66l2.6-1.5,15,25.981-2.6,1.5a9.994,9.994,0,0,1-13.66-3.66ZM407,57V54a10,10,0,0,1,10-10h10a10,10,0,0,1,10,10v3Z" transform="translate(-372.199 -44)" fill="#dfac48"/>
+  <circle id="Ellipse_363" data-name="Ellipse 363" cx="41" cy="41" r="41" transform="translate(8.801 9)" fill="#fcd484"/>
+  <rect id="Rectangle_2080" data-name="Rectangle 2080" width="20" height="3" rx="1.5" transform="translate(40 4)" fill="#917339"/>
+  <rect id="Rectangle_2081" data-name="Rectangle 2081" width="20" height="3" rx="1.5" transform="translate(15.365 82.344) rotate(-121)" fill="#917339"/>
+  <rect id="Rectangle_2082" data-name="Rectangle 2082" width="20" height="3" rx="1.5" transform="matrix(0.53, -0.848, 0.848, 0.53, 81.429, 80.186)" fill="#917339"/>
+</svg>

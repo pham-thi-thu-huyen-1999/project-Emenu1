@@ -1,0 +1,345 @@
+#root {
+  .use-bg {
+    #site-main {
+      #primary {
+        #main-cont {
+          #manage-tbls-list {
+            .view-table-cell {
+              .popup-box {
+                .tbl-manage__form-group {
+                  .tbl-manage__form-group-button {
+                    .emenu-button {
+                      .reactToPrint {
+                        .PDFContentSCSS {
+                          overflow: auto;
+
+                          .content-pdf {
+                            // background-repeat: no-repeat;
+                            // overflow: auto;
+                            // background-size: 100% 100%;
+
+                            // .header-logo-name {
+                            //   display: flex;
+
+                            //   .logo-app {
+                            //     flex-basis: 30%;
+                            //   }
+
+                            //   .logo-name-res {
+                            //     flex: 1;
+
+                            //     .logo-res {
+                            //       width: 70px;
+                            //       height: 70px;
+
+                            //       img {
+                            //         height: 100%;
+                            //         width: 100%;
+                            //       }
+                            //     }
+                            //   }
+                            // }
+
+                            // .content-qr-pro {
+                            //   max-width: 800px;
+                            // }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.PDFContentSCSS {
+  margin: 0;
+
+  .content-pdf {
+    background-repeat: no-repeat;
+    page-break-inside: avoid;
+    background-size: 100% 100%;
+    padding: 10pt;
+    position: relative;
+    float: left;
+    width: 80mm;
+    height: 100%;
+    margin: 0;
+
+    .header-logo-name {
+      padding: 0;
+      display: flex;
+      margin-bottom: 2pt;
+      flex-wrap: nowrap;
+      max-height: 23pt;
+
+      .logo-omenu {
+        flex-basis: 35%;
+        display: flex;
+        color: #fff;
+        align-items: center;
+        margin-right: 4pt;
+
+        .name-omenu {
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          line-height: 7pt;
+
+          .title-name-omenu {
+            font-size: 7pt;
+          }
+
+          .name-email {
+            font-size: 5pt;
+          }
+        }
+
+        img {
+          margin-right: 2pt;
+          height: 0.8cm;
+          width: 0.8cm;
+        }
+      }
+
+      .logo-name-res {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo-res {
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 0.8cm;
+            width: 0.8cm;
+            ;
+          }
+
+          span {
+            text-align: center;
+            font-size: 7pt;
+            color: #fff;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            white-space: pre-wrap;
+            display: -webkit-box;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+
+    .content-container {
+      margin: auto;
+      margin-bottom: 10px;
+
+      .content-qr-pro {
+        margin: auto;
+        // margin: 25pt 0;
+
+        .name-content-left {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // padding-bottom: 2pt;
+          font-size: 7pt;
+          letter-spacing: 0.14px;
+          list-style: 9pt;
+
+          .name-table {
+            font-size: 24px;
+            color: #fff;
+          }
+
+          .arrow-to-qr {
+            // span {
+            //   position: absolute;
+            //   top: -35pt;
+            //   left: 50%;
+            //   text-transform: capitalize;
+            //   transform: translateX(-50%);
+            //   display: flex;
+            //   white-space: nowrap;
+            //   font-size: 24pt;
+            // }
+          }
+        }
+
+        .content-right-qr {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          position: relative;
+
+          .content-qr {
+            height: 5cm;
+            width: 5cm;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            text-align: center;
+            padding: 6pt;
+          }
+
+          .text-english {
+            writing-mode: vertical-rl;
+            -webkit-text-orientation: mixed;
+            text-orientation: mixed;
+            font-size: 7pt;
+            text-align: center;
+            position: absolute;
+            right: 22pt;
+            letter-spacing: 0.4px;
+            white-space: nowrap;
+          }
+        }
+
+        .content-name-table {
+          margin-top: 5pt;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          font-size: 18pt;
+          color: #fff;
+          line-height: 14pt;
+        }
+      }
+
+      .content-info {
+        padding: 5px;
+        background: #fff;
+        border-radius: 5px;
+        font-size: 9pt;
+        font-weight: bold;
+        height: 3.7cm;
+        margin-bottom: 13pt;
+
+        .text-row {
+          padding: 7px;
+          white-space: nowrap;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 13px;
+            height: 11px;
+          }
+
+          span {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
+    .list-payment-method {
+      .title-connect-payment {
+        color: #fff;
+        font-size: 12pt;
+        padding: 10px;
+
+        span {
+          margin-right: 5px;
+          font-weight: 700;
+          width: 80pt;
+        }
+      }
+
+      .list-payment {
+        display: flex;
+
+        .payment-method {
+          padding: 10px;
+          width: 120px;
+
+          img {
+            height: 60px;
+            width: 60px;
+          }
+        }
+      }
+    }
+
+    .footer-file-res {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 10pt;
+      right: 10pt;
+      left: 10pt;
+      color: #fff;
+      font-size: 5pt;
+      max-width: 214pt;
+      margin: auto;
+      line-height: 0;
+
+      .contact-phone {
+        text-transform: initial;
+        // font-size: 10pt;
+        display: flex;
+        flex: 1;
+
+        .contact-item-phone {
+          justify-content: center;
+        }
+
+        .contact-mail {
+          justify-content: flex-end;
+        }
+
+        .item-contact {
+          flex-basis: 50%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+
+          span {
+            font-style: italic;
+            margin-left: 2pt;
+          }
+        }
+      }
+
+      .name-company {
+        flex-basis: 31%;
+        // font-size: 4pt;
+      }
+    }
+  }
+
+  .parent {
+    position: relative;
+
+    .nameRestaurant {
+      position: absolute;
+      top: 3%;
+      left: 64%;
+      font-size: 22px;
+      color: white;
+    }
+
+    .divLogoRestaurant {
+      position: absolute;
+      top: 3%;
+      left: 52%;
+
+      .imgLogoRestaurant {
+        color: white;
+        background-color: white;
+      }
+    }
+  }
+}

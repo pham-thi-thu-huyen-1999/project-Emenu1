@@ -1,0 +1,25 @@
+.emenu-input-date {
+  position: relative;
+  flex: 1;
+
+  .inner-input-date {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid $base-border-color;
+    padding: 0 10px;
+    font-size: $base-font-size;
+    color: $base-text-color;
+    background: #f8f8f8;
+    box-shadow: rgba(37, 11, 54, 0.04) 0px 2px 0px;
+  }
+
+  .icon-date {
+    color: rgb(255, 94, 0);
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,735 @@
+#site-main {
+    #main-cont {
+        .order-combo-table-list {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        .e-row {
+            display: flex !important;
+
+            .lock-up {
+                cursor: not-allowed !important;
+            }
+            .top-acts {
+                .sets-slider {
+                    .slick-list {
+                        .slick-track {
+                            .slick-slider {
+                                .slick-list {
+                                    .slick-track {
+                                        //width: 100% !important;
+
+                                        .slick-slide {
+                                            //width: 95% !important;
+                                            //margin-left: 2.7em;
+
+                                            .order-width-important {
+                                                //width: 100% !important;
+                                                //height: 645px;
+                                            }
+
+                                                .height-300 {
+                                                    min-height: 350px;
+                                                }
+
+                                                .food-item {
+                                                    position: relative;
+                                                    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),
+                                                        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                                    border-radius: 5px;
+                                                    overflow: hidden;
+                                                    font-size: 16px;
+                                                    font-weight: 500;
+                                                    background-color: rgb(255, 255, 255);
+                                                    transition: transform ease-in 0.1s;
+                                                    will-change: transform;
+
+                                                    .onclick-combo {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    }
+
+                                                    .status-food {
+                                                        display: block;
+                                                        text-align: center;
+                                                        background-color: #2699fb;
+                                                        padding: 10px;
+                                                        color: white;
+                                                        font-weight: bold;
+                                                        text-transform: uppercase;
+                                                        font-size: 20px;
+                                                        white-space: nowrap;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                        width: 100%;
+                                                    }
+
+                                                    .detail-combo {
+                                                        padding: 20px;
+                                                        position: relative;
+                                                        .quantity-combo {
+                                                            position: absolute;
+                                                            top: 30%;
+                                                            left: 47.5%;
+                                                            color: red;
+                                                            font-size: xxx-large;
+                                                        }
+
+                                                        .item {
+                                                            h4 {
+                                                                margin: 0;
+                                                            }
+
+                                                            ul {
+                                                                li {
+                                                                    font-size: 17px;
+                                                                    line-height: 1.6;
+                                                                    white-space: nowrap;
+                                                                    overflow: hidden;
+                                                                    text-overflow: ellipsis;
+                                                                }
+
+                                                                li:before {
+                                                                    content: "+";
+                                                                    margin-right: 5px;
+                                                                }
+                                                            }
+
+                                                            .btn-see-more {
+                                                                position: relative;
+                                                                z-index: 999;
+
+                                                                .s-btn {
+                                                                    height: 35px;
+                                                                    line-height: 35px;
+                                                                    padding: 0 10px;
+                                                                    color: #f17a39;
+                                                                    background-color: rgb(239, 239, 239);
+                                                                    margin-top: 10px;
+                                                                }
+
+                                                                .s-btn.s3:hover {
+                                                                    background: rgb(241, 122, 57) !important;
+                                                                    color: #fff !important;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .detail-right {
+                                                            padding: 15px 0 0 10px;
+                                                            position: relative;
+
+                                                            .image-food {
+                                                                margin-top: 0;
+                                                                display: flex;
+                                                                justify-content: center;
+
+                                                                .img-food {
+                                                                    max-width: 230px;
+                                                                    //border-radius: 10px;
+                                                                    display: block;
+                                                                    height: auto;
+                                                                    width: auto;
+                                                                }
+                                                            }
+
+                                                            .detail-right-price {
+                                                                min-height: 30%;
+
+                                                                .price-food {
+                                                                    color: #f44336;
+                                                                    text-align: center;
+                                                                    position: relative;
+                                                                    top: 70px;
+                                                                    right: 80px;
+
+                                                                    .price-frame-hot {
+                                                                        position: absolute;
+                                                                        display: block;
+                                                                        max-width: 230px;
+                                                                        max-height: 95px;
+                                                                        bottom: -25px;
+                                                                        left: -70px;
+                                                                        width: 150px;
+                                                                        height: 74px;
+                                                                        background-repeat: no-repeat;
+                                                                        background-size: contain;
+                                                                    }
+
+                                                                    .price-old {
+                                                                        font-size: 12px;
+                                                                        font-weight: 900;
+                                                                        position: absolute;
+                                                                        transform: translatey(-50%);
+                                                                        color: #666;
+                                                                        top: 22px;
+                                                                        text-decoration: line-through;
+                                                                        left: 40px;
+                                                                    }
+                                                                     .price.price-new {
+                                                                        font-size: smaller;
+                                                                        font-weight: 900;
+                                                                        position: absolute;
+                                                                        transform: translatey(-50%);
+                                                                        bottom: -18px !important;
+                                                                        left: -35px;
+                                                                    }
+                                                                    .price-new {
+                                                                        font-size: smaller;
+                                                                        font-weight: 900;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        margin-top: 26px;
+                                                                    }
+                                                                    .price {
+                                                                        font-size: smaller;
+                                                                        font-weight: 900;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        margin-top: 26px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                li.food-item:hover {
+                                                    position: relative;
+                                                    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),
+                                                        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                                    border-radius: 5px;
+                                                    overflow: hidden;
+                                                    font-size: 16px;
+                                                    font-weight: 500;
+                                                    cursor: pointer;
+                                                    transform: translateY(-1px);
+
+                                                    .status-food {
+                                                        display: block;
+                                                        text-align: center;
+                                                        background-color: rgb(241, 122, 57);
+                                                        padding: 10px 0;
+                                                        color: white;
+                                                        font-weight: bold;
+                                                        padding: 10px;
+                                                        text-transform: uppercase;
+                                                        font-size: 20px;
+                                                        margin-bottom: 0;
+                                                        white-space: nowrap;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                        width: 100%;
+                                                    }
+
+                                                    .detail-combo {
+                                                        padding: 20px;
+                                                        position: relative;
+
+                                                        .item {
+                                                            h4 {
+                                                                margin: 0;
+                                                            }
+
+                                                            ul {
+                                                                li {
+                                                                    font-size: 17px;
+                                                                    line-height: 1.6;
+                                                                    white-space: nowrap;
+                                                                    overflow: hidden;
+                                                                    text-overflow: ellipsis;
+                                                                }
+
+                                                                li:before {
+                                                                    content: "+";
+                                                                    margin-right: 5px;
+                                                                }
+                                                            }
+
+                                                            .btn-see-more {
+                                                                position: relative;
+                                                                z-index: 999;
+
+                                                                .s-btn {
+                                                                    height: 35px;
+                                                                    line-height: 35px;
+                                                                    padding: 0 10px;
+                                                                    color: #f17a39;
+                                                                    background-color: rgb(239, 239, 239);
+                                                                    margin-top: 10px;
+                                                                }
+
+                                                                .s-btn.s3:hover {
+                                                                    background: rgb(241, 122, 57) !important;
+                                                                    color: #fff !important;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .detail-right {
+                                                            padding: 15px 0 0 10px;
+                                                            position: relative;
+
+                                                            .image-food {
+                                                                margin-top: 0;
+                                                                display: flex;
+                                                                justify-content: center;
+
+                                                                .img-food {
+                                                                    max-width: 230px;
+                                                                    //border-radius: 10px;
+                                                                    display: block;
+                                                                    height: auto;
+                                                                    width: auto;
+                                                                }
+                                                            }
+
+                                                            .detail-right-price {
+                                                                min-height: 30%;
+
+                                                                .price-food {
+                                                                    color: #f44336;
+                                                                    text-align: center;
+                                                                    position: relative;
+                                                                    top: 70px;
+                                                                    right: 80px;
+
+                                                                    .price-frame-hot {
+                                                                        position: absolute;
+                                                                        display: block;
+                                                                        max-width: 230px;
+                                                                        max-height: 95px;
+                                                                        bottom: -25px;
+                                                                        left: -70px;
+                                                                        width: 150px;
+                                                                        height: 74px;
+                                                                        background-repeat: no-repeat;
+                                                                        background-size: contain;
+                                                                    }
+                                                                    .price-old {
+                                                                        font-size: 12px;
+                                                                        font-weight: 900;
+                                                                        position: absolute;
+                                                                        transform: translatey(-50%);
+                                                                        color: #666;
+                                                                        top: 22px;
+                                                                        text-decoration: line-through;
+                                                                        left: 40px;
+                                                                    }
+                                                                     .price.price-new {
+                                                                         font-size: smaller;
+                                                                         font-weight: 900;
+                                                                         position: absolute;
+                                                                         transform: translatey(-50%);
+                                                                         bottom: -18px !important;
+                                                                         left: -35px;
+                                                                    }
+
+                                                                    .price-new {
+                                                                        font-size: smaller;
+                                                                        font-weight: 900;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        margin-top: 26px;
+                                                                    }
+                                                                    .price {
+                                                                        font-size: smaller;
+                                                                        font-weight: 900;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        margin-top: 26px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popup-sign-up-combo-choose {
+    max-width: 40% !important;
+}
+
+.popup-sign-up-combo {
+    max-width: 40% !important;
+
+    .flex-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .e-m-left-195 {
+        margin-left: 195px;
+    }
+}
+
+.m-r-left-235 {
+    margin-left: 235px;
+}
+
+.sign-up-combo {
+    margin: 15px 0px;
+    max-width: 50%;
+    width: 270px;
+}
+
+.show-item-combo {
+    margin: 15px 0px;
+    max-width: 50%;
+    width: 270px;
+}
+
+.sign-up-combo:hover {
+    margin: 15px 0px;
+    max-width: 50%;
+    width: 270px;
+    background-color: #2699fb !important;
+}
+
+.show-item-combo:hover {
+    margin: 15px 0px;
+    max-width: 50%;
+    width: 270px;
+    background-color: #2699fb !important;
+}
+
+.paginate-order-food-table-list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.itemList-number-page-current-order-table-list {
+    color: white;
+    bottom: 1.5em;
+    margin-right: 2em;
+    position: absolute;
+}
+
+.itemList-number-page-total-order-table-list {
+    bottom: 0.6em;
+    margin-left: 1.5em;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1024px) {
+    #site-main {
+        #main-cont {
+            .order-combo-table-list {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                .e-row {
+                    display: flex !important;
+                    .lock-up {
+                        cursor: not-allowed !important;
+                    }
+                .top-acts {
+                    .sets-slider {
+                        .slick-list {
+                            .slick-track {
+                                .slick-slider {
+                                    .slick-list {
+                                        .slick-track {
+                                            //width: 100% !important;
+
+                                            .slick-slide {
+                                                //width: 95% !important;
+                                               // margin-left: 2.7em;
+
+                                                    .height-300 {
+                                                        min-height: 350px !important;
+                                                    }
+
+
+
+
+                                                    .food-item {
+                                                        position: relative;
+                                                        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),
+                                                            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                                        border-radius: 5px;
+                                                        overflow: hidden;
+                                                        font-size: 16px;
+                                                        font-weight: 500;
+
+                                                        .status-food {
+                                                            display: block;
+                                                            text-align: center;
+                                                            background-color: #2699fb;
+                                                            color: white;
+                                                            font-weight: bold;
+                                                            padding: 10px;
+                                                            text-transform: uppercase;
+                                                            font-size: 20px;
+                                                            white-space: nowrap;
+                                                            overflow: hidden;
+                                                            text-overflow: ellipsis;
+                                                            width: 100%;
+                                                        }
+
+                                                        .detail-combo {
+                                                            padding: 20px;
+                                                            position: relative;
+
+                                                            .item {
+                                                                h4 {
+                                                                    margin: 0;
+                                                                }
+
+                                                                ul {
+                                                                    li {
+                                                                        font-size: 17px;
+                                                                        line-height: 1.6;
+                                                                        white-space: nowrap;
+                                                                        overflow: hidden;
+                                                                        text-overflow: ellipsis;
+                                                                    }
+
+                                                                    li:before {
+                                                                        content: "+";
+                                                                        margin-right: 5px;
+                                                                    }
+                                                                }
+
+                                                                .btn-see-more {
+                                                                    .s-btn {
+                                                                        height: 35px;
+                                                                        line-height: 35px;
+                                                                        padding: 0 10px;
+                                                                        color: #f17a39;
+                                                                        background-color: rgb(239, 239, 239);
+                                                                        margin-top: 10px;
+                                                                    }
+
+                                                                    .s-btn.s3:hover {
+                                                                        background: rgb(241, 122, 57) !important;
+                                                                        color: #fff !important;
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            .detail-right {
+                                                                padding: 15px 0 0 10px;
+                                                                position: relative;
+
+                                                                .image-food {
+                                                                    margin-top: 0;
+                                                                    display: flex;
+                                                                    justify-content: center;
+
+                                                                    .img-food {
+                                                                        max-width: 230px;
+                                                                        //border-radius: 10px;
+                                                                        display: block;
+                                                                        height: auto;
+                                                                        width: auto;
+                                                                    }
+                                                                }
+
+                                                                .detail-right-price {
+                                                                    min-height: 30%;
+
+                                                                    .price-food {
+                                                                        color: #f44336;
+                                                                        text-align: center;
+                                                                        position: relative;
+                                                                        top: 70px;
+                                                                        right: 95px;
+
+                                                                        .price-frame-hot {
+                                                                            position: absolute;
+                                                                            display: block;
+                                                                            max-width: 230px;
+                                                                            max-height: 95px;
+                                                                            bottom: -25px;
+                                                                            left: -55px;
+                                                                            width: 150px;
+                                                                            height: 74px;
+                                                                            background-repeat: no-repeat;
+                                                                            background-size: contain;
+                                                                        }
+                                                                        .price-old {
+                                                                            font-size: 12px;
+                                                                            font-weight: 900;
+                                                                            position: absolute;
+                                                                            transform: translatey(-50%);
+                                                                            color: #666;
+                                                                            top: 22px;
+                                                                            text-decoration: line-through;
+                                                                            left: 40px;
+                                                                        }
+                                                                         .price.price-new {
+                                                                            font-size: smaller;
+                                                                            font-weight: 900;
+                                                                            position: absolute;
+                                                                            transform: translatey(-50%);
+                                                                            bottom: -18px;
+                                                                            left: -35px;
+                                                                        }
+                                                                        .price-new {
+                                                                            font-size: smaller;
+                                                                            font-weight: 900;
+                                                                            display: flex;
+                                                                            justify-content: center;
+                                                                            margin-top: 26px;
+                                                                        }
+                                                                        .price {
+                                                                            font-size: smaller;
+                                                                            font-weight: 900;
+                                                                            display: flex;
+                                                                            justify-content: center;
+                                                                            margin-top: 26px;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#site-main {
+    #main-cont {
+        .order-food-table-list {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .hori-header {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+
+                .btn-back {
+                    position: relative;
+                    left: 10px;
+                }
+            }
+
+            .text-header {
+                font-size: 30px;
+                font-weight: 400;
+                color: #f27922;
+                position: relative;
+                right: 10px;
+            }
+        }
+    }
+}
+
+.popup-price-with-qty {
+    max-width: 40% !important;
+    .content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        .content-row {
+            display: flex;
+            justify-content: flex-start;
+            .flex-30-price {
+                font-size: 16px;
+                flex: 30%;
+                margin-top: 15px;
+            }
+            .flex-30-qty {
+                flex: 30%;
+                font-size: 16px;
+                margin-top: 65px;
+            }
+        }
+        .content-price {
+            width: 400px;
+            .input-cleave {
+                border: none;
+                box-shadow: none;
+                padding-right: 5px;
+            }
+            border-radius: 10px;
+            border: 1px solid #f8f8f8;
+            padding: 0 5px;
+            font-size: 16px;
+            color: #555;
+            background: #f8f8f8;
+            display: inline-flex;
+            position: relative;
+            .content-unit {
+                display: flex;
+                align-items: center;
+                min-width: 65px;
+                margin-right: 5px;
+            }
+        }
+        .content-qty {
+            width: 400px;
+            margin-top: 50px;
+            .input-cleave {
+                border: none;
+                box-shadow: none;
+                padding-right: 5px;
+            }
+            border-radius: 10px;
+            border: 1px solid #f8f8f8;
+            padding: 0 5px;
+            font-size: 16px;
+            color: #555;
+            background: #f8f8f8;
+            display: inline-flex;
+            position: relative;
+
+            .content-unit {
+                display: flex;
+                align-items: center;
+                min-width: 65px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .show-err {
+        position: absolute;
+        top: 60px;
+        color: red;
+    }
+}
+
+.change-qty {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: #1890ff;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

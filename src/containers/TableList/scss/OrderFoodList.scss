@@ -1,0 +1,132 @@
+.custom-main-popup {
+  background-color: #f4f5f9;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 30;
+  .hori-header {
+    background: #4a4a4a;
+  }
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #4a4a4a;
+    padding: 0 15px;
+    align-items: center;
+    .text-header {
+      font-size: 20px;
+      font-weight: 400;
+      flex: 10;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .tbl-name {
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      text-align: right;
+    }
+  }
+  .body-food {
+    .PopupSelectedList {
+      margin-top: 15px;
+      height: calc(100vh - 200px);
+      overflow: auto;
+      .empty-data {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+          margin-top: 20px;
+          color: red;
+        }
+      }
+    }
+    .PopupSelectedList-no-combo {
+        margin-top: 15px;
+        height: calc(100vh - 145px);
+        overflow: auto;
+
+        .empty-data {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            p {
+                margin-top: 20px;
+                color: red;
+            }
+        }
+    }
+    .data-table {
+      tbody {
+        //height: auto !important;
+      }
+    }
+  }
+  .btn-back {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+}
+
+// @media (min-width: 1200px) {
+//   .e-container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//   }
+// }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) {
+//   .e-container {
+//     max-width: 1400px;
+//     margin: 0 auto;
+//   }
+// }
+
+.e-container {
+    max-width: 98%;
+}
+
+.modal-additional-info-inner {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15px;
+    margin: 15px 0px 0px;
+    height: 40px;
+    position: relative;
+    .title {
+        padding-left: 10px;
+        height: 100%;
+        line-height: 40px;
+        width: 40%;
+        background-image: linear-gradient(#f3a124, #f27822);
+        border-radius: 5px 0 0 5px;
+    }
+    .combo-info {
+        width: 20%;
+        background-color: #ddd;
+        line-height: 40px;
+        text-align: center;
+        color: #5E6775;
+    }
+    .combo-info:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}

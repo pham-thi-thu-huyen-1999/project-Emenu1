@@ -1,0 +1,63 @@
+{
+    "area_list_title": "Danh sách khu vực",
+    "search": "Tìm kiếm",
+    "search_area_by_name_placeholder": "Vui lòng nhập tên khu vực",
+    "add_new_button": "Thêm mới",
+    "table_order": "STT",
+    "table_area_name": "Tên khu vực",
+    "table_area_description": "Mô tả",
+    "table_area_ratio": "Tỉ lệ",
+    "table_empty_data": "Chưa có khu vực nào được tạo",
+    "action_order": "Sắp xếp bàn",
+    "action_edit": "Sửa",
+    "action_delete": "Xóa",
+
+    "area_new_title": "Tạo mới khu vực",
+    "new_area_name": "Tên khu vực",
+    "new_area_name_placeholder": "Vui lòng nhập tên khu vực",
+    "new_area_description": "Mô tả",
+    "new_area_description_placeholder": "Vui lòng nhập mô tả khu vực",
+    "new_area_smoking": {
+        "title": "Khu vực hút thuốc",
+        "yes": "Có",
+        "no": "Không"
+    },
+    "new_area_ratio": "Tỉ lệ",
+
+    "validate": {
+        "name_required": "Tên khu vực không được trống",
+        "description_required": "Mô tả khu vực không được trống"
+    }, 
+
+    "area_message_title": "Thông báo",
+
+    "area_create_title": "Tạo mới khu vực",
+    "area_create_message": "Bạn có muốn tạo mới khu vực?",
+    "area_create_success": "Tạo khu vực thành công",
+    "area_create_fail": "Tạo khu vực thất bại",
+    "new_area_submit_button": "Tạo mới",
+    "new_area_cancel_button": "Hủy",
+
+    "area_edit_title": "Cập nhật thông tin khu vực",
+    "area_edit_message": "Bạn có muốn cập nhật thông tin khu vực?",
+    "area_update_success": "Cập nhật khu vực thành công",
+    "area_update_fail": "Cập nhật khu vực thất bại",
+    "edit_area_submit_button": "Cập nhật",
+    "edit_area_cancel_button": "Hủy",
+
+    "area_delete_title": "Xóa khu vực",
+    "area_delete_message": "Bạn có muốn xóa khu vực này?",
+    "area_delete_sucess": "Xóa khu vực thành công",
+    "area_delete_error": "Xóa khhu vực thất bại",
+    "confirm_button": {
+        "cancel": "Hủy",
+        "delete": "Xóa"
+    },
+
+    "area_statistics": {
+        "available_table": "Số bàn trống",
+        "in_use_table": "Số bàn đang dùng",
+        "vip_table": "Số bàn VIP",
+        "normal_table": "Số bàn thường"
+    }
+}

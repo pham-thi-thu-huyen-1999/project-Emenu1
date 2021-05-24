@@ -1,0 +1,63 @@
+.mfp-content {
+    .max-width-detail-bill {
+        max-width: 60%;
+    }
+}
+
+
+.container-popupPayments {
+    text-align: center;
+
+    .font-size {
+        font-size: 24px;
+    }
+
+    .border-dashed {
+        border: 1px dashed black;
+    }
+
+    .justify-content {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px dashed #ddd;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+}
+
+.btn-close-voucher {
+    height: 33px;
+    min-width: 33px;
+    color: white;
+    background: red;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 33px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    cursor: pointer;
+}
+
+.text-noti-error {
+    color: red;
+}
+
+.PopupSelectedList {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+}

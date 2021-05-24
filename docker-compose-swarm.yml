@@ -1,0 +1,59 @@
+version: "3.7"
+
+services:
+  emenu-client-dev:
+    image: thonh4/omenu:client-staging
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    # ports:
+    #   - 80:80
+    deploy:
+      # placement:
+      #   constraints:
+      #     - node.role == manager
+      replicas: 1
+      # resources:
+        # # # Hard limit - Docker does not allow to allocate more
+        # limits:
+        #   cpus: "0.5"
+        #   memory: 512M
+        # # Soft limit - Docker makes best effort to return to it
+        # reservations:
+        #   cpus: "0.25"
+        #   memory: 256M
+      # service restart policy
+      update_config:
+        parallelism: 2
+        order: start-first
+        failure_action: rollback
+        delay: 10s
+      rollback_config:
+        parallelism: 0
+        order: stop-first
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.emenu-web.rule=Host(`staging.ohazo.net`)"
+        - "traefik.http.routers.emenu-web.entrypoints=web"
+        - "traefik.http.services.emenu-web.loadbalancer.server.port=80"
+        - "traefik.http.routers.emenu-web.middlewares=emenu-web-redirectscheme@docker"
+        - "traefik.http.routers.emenu-web-secured.rule=Host(`staging.ohazo.net`)"
+        - "traefik.http.routers.emenu-web-secured.entrypoints=websecure"
+        - "traefik.http.routers.emenu-web-secured.tls=true"
+        - "traefik.http.routers.emenu-web-secured.tls.certresolver=mytlschallenge"
+        - "traefik.http.middlewares.emenu-web-redirectscheme.redirectscheme.scheme=https"
+    healthcheck:
+      test: "curl -f http://localhost/login || false"
+      timeout: 3s
+    networks:
+      - web-swarm
+
+networks:
+  web-swarm:
+    external: true

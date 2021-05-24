@@ -1,0 +1,14 @@
+<svg id="round_yellow_5" xmlns="http://www.w3.org/2000/svg" width="100" height="103.926" viewBox="0 0 100 103.926">
+  <circle id="Ellipse_366" data-name="Ellipse 366" cx="50" cy="50" r="50" transform="translate(0 2)" fill="blue" opacity="0"/>
+  <path id="Rectangle_4" data-name="Rectangle 4" d="M10,0h3a0,0,0,0,1,0,0V30a0,0,0,0,1,0,0H10A10,10,0,0,1,0,20V10A10,10,0,0,1,10,0Z" transform="translate(99.297 67.201) rotate(180)" fill="#dfac48"/>
+  <path id="Rectangle_5" data-name="Rectangle 5" d="M0,0H3A10,10,0,0,1,13,10V20A10,10,0,0,1,3,30H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(12.312 39.908) rotate(-140)" fill="#dfac48"/>
+  <path id="Rectangle_4-2" data-name="Rectangle 4" d="M10,0h3a0,0,0,0,1,0,0V30a0,0,0,0,1,0,0H10A10,10,0,0,1,0,20V10A10,10,0,0,1,10,0Z" transform="translate(48.402 103.926) rotate(-103)" fill="#dfac48"/>
+  <path id="Rectangle_5-2" data-name="Rectangle 5" d="M0,0H3A10,10,0,0,1,13,10V20A10,10,0,0,1,3,30H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(46.77 12.432) rotate(-73)" fill="#dfac48"/>
+  <path id="Rectangle_4-3" data-name="Rectangle 4" d="M10,0h3a0,0,0,0,1,0,0V30a0,0,0,0,1,0,0H10A10,10,0,0,1,0,20V10A10,10,0,0,1,10,0Z" transform="matrix(0.777, -0.629, 0.629, 0.777, 2, 72.01)" fill="#dfac48"/>
+  <circle id="Ellipse_363" data-name="Ellipse 363" cx="41" cy="41" r="41" transform="translate(9.297 11.201)" fill="#fcd484"/>
+  <rect id="Rectangle_2086" data-name="Rectangle 2086" width="20" height="3" rx="1.5" transform="translate(55.421 5.325) rotate(19)" fill="#917339"/>
+  <rect id="Rectangle_2087" data-name="Rectangle 2087" width="20" height="3" rx="1.5" transform="translate(95.362 41.935) rotate(87)" fill="#917339"/>
+  <rect id="Rectangle_2088" data-name="Rectangle 2088" width="20" height="3" rx="1.5" transform="translate(72.454 94.036) rotate(166)" fill="#917339"/>
+  <rect id="Rectangle_2089" data-name="Rectangle 2089" width="20" height="3" rx="1.5" transform="matrix(-0.616, -0.788, 0.788, -0.616, 20.362, 88.803)" fill="#917339"/>
+  <rect id="Rectangle_2090" data-name="Rectangle 2090" width="20" height="3" rx="1.5" transform="translate(8.582 29.427) rotate(-48)" fill="#917339"/>
+</svg>

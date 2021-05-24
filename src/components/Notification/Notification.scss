@@ -1,0 +1,133 @@
+.notification-container {
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+  z-index: 3;
+  position: fixed;
+  right: 80px;
+  top: 70px;
+  background: #ffffff;
+  width: 400px;
+  /* max-height: 75%; */
+  border-radius: 8px;
+  font-size: 18px;
+  color: black;
+  height: calc(100% - 250px);
+  min-height: 300px;
+}
+
+.notification-container .total {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #93cc39;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.notifications {
+  height: calc(100% - 58px);
+  overflow-y: scroll;
+  /* height: 600px; */
+  border-radius: 0 0 0 8px;
+
+  .notification {
+    background: #e3f2f7;
+    padding: 10px;
+    border-bottom: 1px solid #e1e1e1;
+
+    &.noti-readed {
+      background: #ddd !important;
+    }
+  }
+}
+
+
+
+.notification-container {
+  .time {
+    color: #6c7779;
+    font-size: 14.5px;
+  }
+
+  .book {
+    background: #e1e1e1;
+    color: #878787;
+    padding: 10px;
+    font-size: 14.5px;
+    border-top: 1px solid #e1e1e1;
+  }
+
+  .more {
+    cursor: default;
+    padding: 10px;
+    font-size: 16px;
+    color: #2196F3;
+    border-top: 1px solid #e1e1e1;
+  }
+  .more:hover {
+    color: #e6733a;
+  }
+}
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(3px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+.notification .content-noti {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.notification .title-noti {
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.notification .title-noti .text-title {
+  font-weight: bold;
+  font-size: 22px;
+  margin-right: 5px;
+  text-transform: capitalize;
+}
+
+.notifications .no-data {
+  padding: 10px;
+}
+
+.notifications .amount-noti-duplicate {
+  color: #f6533b;
+  font-size: 16px;
+}
+
+.notification-container h3 {
+  text-transform: uppercase;
+}

@@ -1,0 +1,7 @@
+<svg id="vertical_rectangle_yellow_2" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="100" height="80" rx="10" transform="translate(90) rotate(90)" fill="#fcd484"/>
+  <path id="Rectangle_5" data-name="Rectangle 5" d="M0,0H0A10,10,0,0,1,10,10V20A10,10,0,0,1,0,30H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(10 65) rotate(180)" fill="#dfac48"/>
+  <path id="Rectangle_4" data-name="Rectangle 4" d="M10,0h0a0,0,0,0,1,0,0V30a0,0,0,0,1,0,0h0A10,10,0,0,1,0,20V10A10,10,0,0,1,10,0Z" transform="translate(100 65) rotate(180)" fill="#dfac48"/>
+  <rect id="Rectangle_2112" data-name="Rectangle 2112" width="20" height="3" rx="1.5" transform="translate(95.5 40.5) rotate(90)" fill="#917339"/>
+  <rect id="Rectangle_2113" data-name="Rectangle 2113" width="20" height="3" rx="1.5" transform="translate(7.5 40.5) rotate(90)" fill="#917339"/>
+</svg>

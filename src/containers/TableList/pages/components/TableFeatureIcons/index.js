@@ -1,0 +1,16 @@
+export default {
+    "FOOD_LIST": require('./FoodListIcon').default,
+    "CHECK_OUT": require('./CheckoutIcon').default,
+    "CHANGE_EMPTY_TABLE": require('./ChangeAvailableIcon').default,
+    "ADD_TABLE": require('./AddTableIcon').default,
+    "SEPERATE_TABLE": require('./SeperateTableIcon').default,
+    "COMBINE_TABLE_INFO": require('./CombineInfoIcon').default,
+    "ADD_ORDER": require('./AddOrderIcon').default,
+    "CHANGE_TABLE": require('./ChangeTableIcon').default,
+    "CANCEL_CHECK_OUT": require('./CancelIcon').default,
+    "COMBINE_TABLE": require('./CombineTableIcon').default,
+    "CANCEL_ORDER": require('./CancelIcon').default,
+    "SHOW_QR_CODE": require('./QRCodeIcon').default,
+    "ORDER": require('./OrderIcon').default,
+    "RESTORE_ORDER": require('./OrderIcon').default,
+}

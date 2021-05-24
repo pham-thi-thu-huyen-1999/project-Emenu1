@@ -1,0 +1,414 @@
+.emenu-header {
+  height: 70px;
+  background: #393e46;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 0 10px;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    .full-screen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+
+    .restaurant-info {
+      border-radius: 5px;
+      font-size: 18px;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      // width: 235px;
+
+      .restaurant-logo-container {
+        width: 60px;
+        height: 60px;
+
+        .restaurant-logo {
+          border-radius: 5px;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .restaurant-name-contaniner {
+        margin-left: 10px;
+        width: 165px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre;
+
+        .restaurant-name {
+          width: inherit;
+        }
+      }
+    }
+
+    .header-user {
+      height: 100%;
+      // min-width: 285px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .current-date {
+        margin-right: 5px;
+        min-width: 150px;
+      }
+
+      .notification-icon-container {
+        height: 60px;
+        width: 60px;
+        margin-right: 5px;
+        cursor: pointer;
+        position: relative;
+        z-index: 999;
+
+        .total-noti {
+          background: #fff;
+          border-radius: 100%;
+          color: #ed1c24;
+          padding: 2px 4px;
+          right: -5px;
+          font-size: 18px;
+          bottom: -5px;
+          position: absolute;
+          z-index: 0;
+          min-width: 30px;
+          height: 30px;
+          text-align: center;
+        }
+
+        .notification-icon {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .user-avatar-container {
+        cursor: pointer;
+        height: 60px;
+        width: 60px;
+
+        .user-avatar {
+          height: 100%;
+          width: 100%;
+          border-radius: 30px;
+          border: 2px solid #f27a23;
+        }
+      }
+    }
+
+    .table-menu-container {
+      display: none;
+    }
+
+    .header-feature-wrapper {
+      flex: 1;
+      position: relative;
+
+      .header-feature {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 70px;
+        overflow: hidden;
+        position: relative;
+
+        .feature-item {
+          background: url(../images/big-btn.png) no-repeat;
+          background-size: 100% 100%;
+          background-color: #f16421;
+          border-radius: 30px;
+          height: 60px;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 5px 2px;
+          position: relative;
+          max-width: 245px;
+
+          &.active {
+            background-image: url(../images/big-btn-active.png);
+            background-color: #f18639;
+          }
+
+          .feature-icon-container {
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+
+            .feature-icon {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .notification-count {
+            position: absolute;
+            top: 0px;
+            right: -5px;
+            width: auto;
+            min-width: 25px;
+            height: 25px;
+            border-radius: 12.5px;
+            background-color: #93cc39;
+            color: #fff;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+          }
+        }
+      }
+
+      &.has-more {
+        padding-right: 100px;
+      }
+
+      .more-button {
+        width: 100px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: #f16421;
+        background: url(../images/big-btn.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        margin: 5px 0;
+        cursor: pointer;
+        right: 10px;
+        top: 0;
+      }
+    }
+
+    .user-setting {
+      position: absolute;
+      right: 10px;
+      top: 75px;
+      width: 250px;
+      color: #f27a23;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 5px;
+      background-color: #fff;
+      z-index: 3;
+
+      .user-setting-item {
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ddd;
+        }
+
+        .logout-button-group {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 30px;
+          position: relative;
+
+          .logout-icon-container {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+
+            .logout-icon {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .checkout-button-group {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 30px;
+          position: relative;
+
+          .checkout-icon-container {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+
+            .checkout-icon {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .calendar-button-group {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 30px;
+          position: relative;
+
+          .calendar-icon-container {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+
+            .calendar-icon {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .header-sub-menu {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      height: 70px;
+      width: 100%;
+      background-color: #393e46;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+
+      .feature-item {
+        background: url(../images/big-btn.png) no-repeat;
+        background-size: 100% 100%;
+        background-color: #f16421;
+        border-radius: 30px;
+        height: 60px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2.5px;
+        position: relative;
+
+        &.active {
+          background-image: url(../images/big-btn-active.png);
+        }
+
+        .feature-icon-container {
+          width: 25px;
+          height: 25px;
+          margin-right: 5px;
+
+          .feature-icon {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .notification-count {
+          position: absolute;
+          top: 0px;
+          right: -5px;
+          width: auto;
+          min-width: 25px;
+          height: 25px;
+          border-radius: 12.5px;
+          background-color: #93cc39;
+          color: #fff;
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+        }
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .emenu-header {
+    .header-wrapper {
+      .header-user {
+        .notification-icon-container {
+          width: 50px;
+          height: 50px;
+        }
+
+        .user-avatar-container {
+          height: 50px;
+          width: 50px;
+        }
+      }
+
+      .table-menu-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+        flex: 1;
+        cursor: pointer;
+
+        .mobile-menu-container {
+          height: 50px;
+          width: 100px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          border-radius: 30px;
+          background: url(../images/big-btn.png) no-repeat;
+          background-size: 100% 100%;
+          background-color: #f16421;
+        }
+      }
+
+      .header-feature-wrapper {
+        display: none;
+
+        &.has-more {
+          padding-right: 5px;
+        }
+
+        .more-button {
+          display: none
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 1366px) {
+//   .emenu-header {
+//     .header-wrapper {
+//       .full-screen {
+//         display: none !important;
+//       }
+//     }
+//   }
+// }

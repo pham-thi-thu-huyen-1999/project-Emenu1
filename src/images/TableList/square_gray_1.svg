@@ -1,0 +1,6 @@
+<svg id="square_gray_1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="Rectangle_2047" data-name="Rectangle 2047" width="100" height="100" rx="10" fill="#cbcbce" opacity="0"/>
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="80" height="80" rx="10" transform="translate(10 10)" fill="#cbcbce"/>
+  <path id="Rectangle_3" data-name="Rectangle 3" d="M10,0h0a0,0,0,0,1,0,0V30a0,0,0,0,1,0,0h0A10,10,0,0,1,0,20V10A10,10,0,0,1,10,0Z" transform="translate(0 35)" fill="#a6a6aa"/>
+  <rect id="Rectangle_2050" data-name="Rectangle 2050" width="20" height="3" rx="1.5" transform="translate(4 60) rotate(-90)" fill="#898989"/>
+</svg>

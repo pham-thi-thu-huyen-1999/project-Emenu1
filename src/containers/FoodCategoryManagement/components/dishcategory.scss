@@ -1,0 +1,107 @@
+.dishcategory .desc {
+    width: 70%;
+}
+
+.dishcategory .name {
+    width: 20%;
+}
+
+.main-tbl .row-its li .name {
+    width: 20%;
+}
+
+.height-btn-table {
+    height: 49px !important;
+    line-height: 49px !important;
+}
+
+.height-btn-table-print-test {
+    max-width: 120px;
+}
+
+#manage-dishes-list {
+    .popup-box {
+        max-width: 1700px;
+
+        .btnback-title {
+            margin: 5px 0 15px;
+            position: relative;
+
+            h3 {
+                margin: 0;
+            }
+
+            .btn-back {
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        .top-acts {
+            display: flex;
+
+            .input-btn-search {
+                flex-basis: 30%;
+
+                .emenu-input {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.emenu-dialog {
+    .mfp-content {
+        .max-width-edit-food-category {
+            max-width: 800px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .content-form-edit {
+                .title-form {
+                    text-align: start;
+                    font-size: 18px;
+                    flex-basis: 20%;
+                }
+            }
+            .priority{
+                .e-form-label{
+                    flex-basis: 20%;
+                    text-align: start;
+                    font-size: 16px;
+                }
+                .field-listss{
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+.emenu-dialog {
+    .mfp-content {
+        .max-width-detail-food-category {
+            max-width: 800px;
+            max-height: 500px;
+
+            .title-detail-food-category {
+                font-size: 24px;
+            }
+
+            .e-form {
+                .e-form-field {
+                    .e-form-label {
+                        font-size: 18px;
+                    }
+
+                    .e-form-input {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

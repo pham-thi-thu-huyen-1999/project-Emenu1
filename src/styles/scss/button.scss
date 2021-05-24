@@ -1,0 +1,146 @@
+.button-circle {
+  &.s-btn {
+    display: inline-block;
+    min-width: 40px !important;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #f27922;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 5px !important;
+    font-size: 12px;
+
+    &.s1 {
+      background: #93cc39;
+    }
+
+    &.s2 {
+      background: #ed1c24;
+    }
+
+    &.s3 {
+      background: #898989;
+    }
+
+    &.s4 {
+      background: #00bff3;
+    }
+
+    &.s5 {
+      background: #2699fb;
+    }
+  }
+}
+
+.emenu-button {
+  text-overflow: ellipsis;
+  &.main-btn {
+    background: url(../../images/main-btn.png) no-repeat;
+    background-size: 100% 100%;
+    height: 60px;
+    line-height: 24px;
+    padding: 18px 23px;
+    min-width: 115px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    &.big {
+      height: 75px;
+      padding-top: 25.5px;
+      padding-bottom: 25.5px;
+    }
+    &.s2 {
+      background-image: url(../../images/big-btn.png);
+    }
+    &.s3 {
+      height: 70px;
+      padding-top: 20.5px;
+      padding-bottom: 20.5px;
+      background: #f75940;
+      border-radius: 50px;
+      font-size: 18px;
+      min-width: 150px;
+      font-weight: 400;
+    }
+    &.no-radius {
+      border-radius: 0;
+    }
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
+}
+
+.animated-btn {
+  -webkit-animation-name: zoomInAnimate;
+  animation-name: zoomInAnimate;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+button.main-btn,
+input.main-btn {
+  width: auto;
+  border: none;
+  outline: none;
+}
+
+@-webkit-keyframes zoomInAnimate {
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes zoomInAnimate {
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .emenu-button {
+    &.main-btn {
+      height: 50px;
+      padding: 13px 20px;
+      img {
+        max-width: 15px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emenu-button {
+    &.main-btn,
+    &.main-btn.big,
+    &.main-btn.s3 {
+      height: 50px;
+      padding: 13px 15px;
+      line-height: 24px;
+    }
+  }
+}
+
+.swal2-actions {
+  >button {
+    background: none;
+    outline: none;
+  }
+}

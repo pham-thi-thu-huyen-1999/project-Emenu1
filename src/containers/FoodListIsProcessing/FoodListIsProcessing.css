@@ -1,0 +1,95 @@
+#sel-area {
+    float: right;
+    margin-top: 2%;
+}
+
+#processing-dishes {
+    width: 98%;
+    margin: 0 auto;
+}
+
+#processing-dishes .it {
+    min-height: 97px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#processing-dishes .it .quantity .number{
+    font-size: 2.6em;
+    font-weight: 900;
+    color: #f27922;
+}
+
+#processing-dishes .it .quantity  {
+    display: flex;
+    min-width: 100px;
+    justify-content: center;
+}
+
+#processing-dishes .it .sub-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 150px;
+}
+
+#processing-dishes .it .sub-info .table_name {
+    font-size: 1.4em;
+}
+
+#processing-dishes .it .sub-info .time-order {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.food .desc {
+    width: 20%;
+}
+
+.food .name {
+    width: 15%;
+}
+
+.main-tbl .row-its li .name {
+    width: 15%;
+}
+
+.food-accurding-to-table {
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.order-item:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.color--blue {
+    color: rgb(17, 61, 180);
+}
+
+.color--orange {
+    color: orange;
+}
+
+.order-item__title__minute .clock-icon {
+    font-size: 25px;
+}
+
+.order-item__body {
+    clear: both;
+    padding: 0px 15px 10px;
+    background-color: rgb(242, 242, 242);
+}
+
+.order-item__body .number {
+    font-size: 20px;
+    margin-right: 1px;
+}
+
+.order-item__body li {
+    clear: both;
+}

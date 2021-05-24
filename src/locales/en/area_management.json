@@ -1,0 +1,63 @@
+{
+    "area_list_title": "Area list",
+    "search": "Search",
+    "search_area_by_name_placeholder": "Please enter area name",
+    "add_new_button": "Add new",
+    "table_order": "Order",
+    "table_area_name": "Area name",
+    "table_area_description": "Description",
+    "table_area_ratio": "Ratio",
+    "table_empty_data": "There is no area created yet",
+    "action_order": "Arrange tables",
+    "action_edit": "Edit",
+    "action_delete": "Delete",
+
+    "area_new_title": "New area",
+    "new_area_name": "Area name",
+    "new_area_name_placeholder": "Please enter area name",
+    "new_area_description": "Description",
+    "new_area_description_placeholder": "Please enter area description",
+    "new_area_smoking": {
+        "title": "Smoking",
+        "yes": "Yes",
+        "no": "No"
+    },
+    "new_area_ratio": "Ratio",
+
+    "validate": {
+        "name_required": "Area name is required",
+        "description_required": "Area description is required"
+    },
+
+    "area_message_title": "Notification",
+
+    "area_create_title": "Create a new area",
+    "area_create_message": "Do you want to create a new area?",
+    "area_create_success": "Area created successfully",
+    "area_create_fail": "Area created fail",
+    "new_area_submit_button": "Save",
+    "new_area_cancel_button": "Cancel",
+
+    "area_edit_title": "Edit area",
+    "area_edit_message": "Bạn có muốn cập nhật thông tin khu vực?",
+    "area_update_success": "Area updated successfully",
+    "area_update_fail": "Area updated fail",
+    "edit_area_submit_button": "Update",
+    "edit_area_cancel_button": "Cancel",
+
+    "area_delete_title": "Delete area confirmation",
+    "area_delete_message": "Do you want to delete this area?",
+    "area_delete_sucess": "Area deleted successfully",
+    "area_delete_error": "Area deleted fail",
+    "confirm_button": {
+        "cancel": "Cancel",
+        "delete": "Delete"
+    },
+
+    "area_statistics": {
+        "available_table": "Available tables",
+        "in_use_table": "In-used tables",
+        "vip_table": "Vip tables",
+        "normal_table": "Normal tables"
+    }
+}

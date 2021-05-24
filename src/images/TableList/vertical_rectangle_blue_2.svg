@@ -1,0 +1,9 @@
+<svg id="vertical_rectangle_blue_2" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="_2ghe-xanh-hcn-dung" data-name="2ghe-xanh-hcn-dung" transform="translate(1290 -136) rotate(90)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="100" height="80" rx="10" transform="translate(136 1200)" fill="#00bff3"/>
+    <path id="Rectangle_5" data-name="Rectangle 5" d="M0,0H0A10,10,0,0,1,10,10V20A10,10,0,0,1,0,30H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(201 1280) rotate(90)" fill="#0c90b4"/>
+    <path id="Rectangle_4" data-name="Rectangle 4" d="M10,0h0a0,0,0,0,1,0,0V30a0,0,0,0,1,0,0h0A10,10,0,0,1,0,20V10A10,10,0,0,1,10,0Z" transform="translate(201 1190) rotate(90)" fill="#0c90b4"/>
+    <rect id="Rectangle_2112" data-name="Rectangle 2112" width="20" height="3" rx="1.5" transform="translate(176.5 1194.5)" fill="#00bff3"/>
+    <rect id="Rectangle_2113" data-name="Rectangle 2113" width="20" height="3" rx="1.5" transform="translate(176.5 1282.5)" fill="#00bff3"/>
+  </g>
+</svg>

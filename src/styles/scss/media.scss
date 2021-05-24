@@ -1,0 +1,15 @@
+@media (orientation: portrait) {
+  html:not(.not-rotate) {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    #site-main {
+      height: 100vw;
+    }
+  }
+}

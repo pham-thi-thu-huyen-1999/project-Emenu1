@@ -1,0 +1,123 @@
+.data-table {
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+
+	thead {
+		display: block;
+		background-image: linear-gradient(#f3a124, #f27822);
+		border-radius:5px 5px 0 0;
+
+		tr {
+			display: inline-table;
+			width: 100%;
+			height: 46px;
+
+			th {
+				text-align: left;
+				color: #fff;
+				text-align: center;
+			}
+		}
+	}
+
+	tbody {
+		display: block;
+		overflow: auto;
+		width: 100%;
+		height: calc(100% - 46px);
+
+		&::-webkit-scrollbar {
+			width: 8px;
+			height: 8px;
+		}
+
+		&::-webkit-scrollbar-track {
+			border-radius: 0;
+			border-bottom: 1px solid #e1e1e1;
+		}
+
+		tr {
+			border: 1px solid #e1e1e1;
+			position: relative;
+			display: inline-table;
+			width: 100%;
+			height: 60px;
+			background-color: #f8f8f8;
+			border-top: none;
+			overflow: hidden;
+			&:nth-child(2n) {
+				background: #fff;
+			}
+			td {
+				text-align: center;
+				font-size: 15px;
+				font-weight: 500;
+				position: relative;
+				&.ellipsis-text {
+					max-width: 100px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: pre;
+				}
+				.button-group-content {
+					display: flex;
+					position: absolute;
+					right: 0;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
+					bottom: 0;
+					display: flex;
+					&.desktop {
+						display: none;
+					}
+					&.mobile {
+						right: -1000px;
+						transition: 0.4s linear all;
+						&.show {
+							right: 60px;
+							transition: 0.4s linear all;
+						}
+					}
+					.s-btn {
+						height: 49px;
+						line-height: 49px;
+					}
+				}
+				.button-more {
+					width: 40px;
+					height: 40px;
+					border-radius: 20px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: #f27822;
+					position: absolute;
+					right: 10px;
+					top: calc(50% - 20px);
+					border: none;
+					cursor: pointer;
+				}
+			}
+			&:hover {
+				.button-group-content {
+					&.desktop {
+						display: flex;
+						.animated-btn{
+							animation-duration: unset;
+						}
+					}
+				}
+			}
+		}
+		p.noneData{
+			margin-top: 30px;
+			text-align: center;
+			font-style: italic;
+			color: #f16421;
+		}
+	}
+}
